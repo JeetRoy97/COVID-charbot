@@ -1,1 +1,1 @@
-# COVID-charbot
+# COVID-chatbot
