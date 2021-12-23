@@ -1,0 +1,785 @@
+version: "2.0"
+stories:
+- story: default path
+  steps:
+  - intent: greet
+  - action: utter_how_can_i_help
+  - intent: search_provider
+    entities:
+    - facility_type: test center
+  - action: action_facility_search
+- story: facility type test center
+  steps:
+  - intent: search_provider
+    entities:
+    - facility_type: test center
+  - action: action_facility_search
+- story: facility type hospital
+  steps:
+  - intent: search_provider
+    entities:
+    - facility_type: hospital
+  - action: action_facility_search
+- story: facilty type Shelter
+  steps:
+  - intent: search_provider
+    entities:
+    - facility_type: shelter homes
+  - action: action_facility_search
+- story: facilty type free food
+  steps:
+  - intent: search_provider
+    entities:
+    - facility_type: free food
+  - action: action_facility_search
+- story: facility statistics
+  steps:
+  - intent: search_provider
+    entities:
+    - facility_type: corona cases
+  - action: action_facility_search
+- story: facility email
+  steps:
+  - intent: search_provider
+    entities:
+    - facility_type: email
+  - action: action_facility_search
+- story: out_of_scope_story
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: smalltalk_human_story
+  steps:
+  - intent: smalltalk_human
+  - action: utter_smalltalk_human
+- story: faq_distancing_story
+  steps:
+  - intent: faq_distancing
+  - action: utter_faq_distancing
+- story: faq_symptoms_story
+  steps:
+  - intent: faq_symptoms
+  - action: utter_faq_symptoms
+- story: faq_vaccine_story
+  steps:
+  - intent: faq_vaccine
+  - action: utter_faq_vaccine
+- story: faq_vulnerable_story
+  steps:
+  - intent: faq_vulnerable
+  - action: utter_faq_vulnerable
+- story: faq_testing_story
+  steps:
+  - intent: faq_testing
+  - action: utter_faq_testing
+- story: faq_supplies_story
+  steps:
+  - intent: faq_supplies
+  - action: utter_faq_supplies
+- story: faq_whatisit_story
+  steps:
+  - intent: faq_whatisit
+  - action: utter_faq_whatisit
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- story: mood_unhappy_story
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+- story: greet and subscribe
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: subscribe
+  - action: newsletter_form
+  - active_loop: newsletter_form
+
+- story: faq_incubation_story
+  steps:
+  - intent: faq_incubation
+  - action: utter_faq_incubation
+- story: faq_risk_story
+  steps:
+  - intent: faq_risk
+  - action: utter_faq_risk
+- story: faq_SARS_story
+  steps:
+  - intent: faq_SARS
+  - action: utter_faq_SARS
+- story: faq_virus_story
+  steps:
+  - intent: faq_virus
+  - action: utter_faq_virus
+- story: faq_source_story
+  steps:
+  - intent: faq_source
+  - action: utter_faq_source
+- story: faq_symptoms_story
+  steps:
+  - intent: faq_symptoms
+  - action: utter_faq_symptoms
+- story: faq_transmit_story
+  steps:
+  - intent: faq_transmit
+  - action: utter_faq_transmit
+- story: faq_vaccine_story
+  steps:
+  - intent: faq_vaccine
+  - action: utter_faq_vaccine
+- story: faq_treatment_story
+  steps:
+  - intent: faq_treatment
+  - action: utter_faq_treatment
+- story: faq_protect_story
+  steps:
+  - intent: faq_protect
+  - action: utter_faq_protect
+- story: faq_workers_story
+  steps:
+  - intent: faq_workers
+  - action: utter_faq_workers
+- story: faq_WHO_story
+  steps:
+  - intent: faq_WHO
+  - action: utter_faq_WHO
+- story: faq_child_story
+  steps:
+  - intent: faq_child
+  - action: utter_faq_child
+- story: faq_family_story
+  steps:
+  - intent: faq_family
+  - action: utter_faq_family
+- story: faq_test_story
+  steps:
+  - intent: faq_test
+  - action: utter_faq_test
+- story: faq_information_story
+  steps:
+  - intent: faq_information
+  - action: utter_faq_information
+- story: faq_SARA_CoV_2_story
+  steps:
+  - intent: faq_SARA_CoV_2
+  - action: utter_faq_SARA_CoV_2
+- story: faq_origin_story
+  steps:
+  - intent: faq_origin
+  - action: utter_faq_origin
+- story: faq_seasonal_story
+  steps:
+  - intent: faq_seasonal
+  - action: utter_faq_seasonal
+- story: faq_transmission_story
+  steps:
+  - intent: faq_transmission
+  - action: utter_faq_transmission
+- story: faq_infectitious_story
+  steps:
+  - intent: faq_infectitious
+  - action: utter_faq_infectitious
+- story: faq_severe_story
+  steps:
+  - intent: faq_severe
+  - action: utter_faq_severe
+- story: faq_life_story
+  steps:
+  - intent: faq_life
+  - action: utter_faq_life
+- story: faq_children_story
+  steps:
+  - intent: faq_children
+  - action: utter_faq_children
+- story: faq_pregnancy_story
+  steps:
+  - intent: faq_pregnancy
+  - action: utter_faq_pregnancy
+- story: faq_testing_story
+  steps:
+  - intent: faq_testing
+  - action: utter_faq_testing
+- story: faq_centre_story
+  steps:
+  - intent: faq_centre
+  - action: utter_faq_centre
+- story: faq_allergy_story
+  steps:
+  - intent: faq_allergy
+  - action: utter_faq_allergy
+- story: faq_fever_story
+  steps:
+  - intent: faq_fever
+  - action: utter_faq_fever
+- story: faq_isolation_story
+  steps:
+  - intent: faq_isolation
+  - action: utter_faq_isolation
+- story: faq_avoid_story
+  steps:
+  - intent: faq_avoid
+  - action: utter_faq_avoid
+- story: faq_avoiding_story
+  steps:
+  - intent: faq_avoiding
+  - action: utter_faq_avoiding
+- story: faq_distance_story
+  steps:
+  - intent: faq_distance
+  - action: utter_faq_distance
+- story: faq_mask_story
+  steps:
+  - intent: faq_mask
+  - action: utter_faq_mask
+- story: faq_time_story
+  steps:
+  - intent: faq_time
+  - action: utter_faq_time
+- story: faq_influenza_story
+  steps:
+  - intent: faq_influenza
+  - action: utter_faq_influenza
+- story: faq_situation_story
+  steps:
+  - intent: faq_situation
+  - action: utter_faq_situation
+- story: faq_preparation_story
+  steps:
+  - intent: faq_preparation
+  - action: utter_faq_preparation
+- story: faq_condition_story
+  steps:
+  - intent: faq_condition
+  - action: utter_faq_condition
+- story: faq_infected_story
+  steps:
+  - intent: faq_infected
+  - action: utter_faq_infected
+- story: faq_outbreak_story
+  steps:
+  - intent: faq_outbreak
+  - action: utter_faq_outbreak
+- story: faq_schools_story
+  steps:
+  - intent: faq_schools
+  - action: utter_faq_schools
+- story: faq_travel_story
+  steps:
+  - intent: faq_travel
+  - action: utter_faq_travel
+- story: faq_precautions_story
+  steps:
+  - intent: faq_precautions
+  - action: utter_faq_precautions
+- story: faq_plane_story
+  steps:
+  - intent: faq_plane
+  - action: utter_faq_plane
+- story: faq_package_story
+  steps:
+  - intent: faq_package
+  - action: utter_faq_package
+- story: faq_food_story
+  steps:
+  - intent: faq_food
+  - action: utter_faq_food
+- story: faq_animal_story
+  steps:
+  - intent: faq_animal
+  - action: utter_faq_animal
+- story: faq_lung_story
+  steps:
+  - intent: faq_lung
+  - action: utter_faq_lung
+- story: faq_respiration_story
+  steps:
+  - intent: faq_respiration
+  - action: utter_faq_respiration
+- story: faq_sick_story
+  steps:
+  - intent: faq_sick
+  - action: utter_faq_sick
+- story: faq_isolating_story
+  steps:
+  - intent: faq_isolating
+  - action: utter_faq_isolating
+- story: faq_outside_story
+  steps:
+  - intent: faq_outside
+  - action: utter_faq_outside
+- story: faq_respiratory_story
+  steps:
+  - intent: faq_respiratory
+  - action: utter_faq_respiratory
+- story: faq_cough_story
+  steps:
+  - intent: faq_cough
+  - action: utter_faq_cough
+- story: faq_protection_story
+  steps:
+  - intent: faq_protection
+  - action: utter_faq_protection
+- story: faq_pet_story
+  steps:
+  - intent: faq_pet
+  - action: utter_faq_pet
+- story: faq_smoke_story
+  steps:
+  - intent: faq_smoke
+  - action: utter_faq_smoke
+- story: faq_old_story
+  steps:
+  - intent: faq_old
+  - action: utter_faq_old
+- story: faq_vulnerable_story
+  steps:
+  - intent: faq_vulnerable
+  - action: utter_faq_vulnerable
+- story: faq_elder_story
+  steps:
+  - intent: faq_elder
+  - action: utter_faq_elder
+- story: faq_organisation_story
+  steps:
+  - intent: faq_organisation
+  - action: utter_faq_organisation
+- story: faq_air_story
+  steps:
+  - intent: faq_air
+  - action: utter_faq_air
+- story: faq_feces_story
+  steps:
+  - intent: faq_feces
+  - action: utter_faq_feces
+- story: faq_prevent_story
+  steps:
+  - intent: faq_prevent
+  - action: utter_faq_prevent
+- story: faq_measures_story
+  steps:
+  - intent: faq_measures
+  - action: utter_faq_measures
+- story: faq_likely_story
+  steps:
+  - intent: faq_likely
+  - action: utter_faq_likely
+- story: faq_worry_story
+  steps:
+  - intent: faq_worry
+  - action: utter_faq_worry
+- story: faq_antibiotics_story
+  steps:
+  - intent: faq_antibiotics
+  - action: utter_faq_antibiotics
+- story: faq_medicines_story
+  steps:
+  - intent: faq_medicines
+  - action: utter_faq_medicines
+- story: faq_wear_story
+  steps:
+  - intent: faq_wear
+  - action: utter_faq_wear
+- story: faq_dispose_story
+  steps:
+  - intent: faq_dispose
+  - action: utter_faq_dispose
+- story: faq_period_story
+  steps:
+  - intent: faq_period
+  - action: utter_faq_period
+- story: faq_catch_story
+  steps:
+  - intent: faq_catch
+  - action: utter_faq_catch
+- story: faq_receive_story
+  steps:
+  - intent: faq_receive
+  - action: utter_faq_receive
+- story: faq_not_story
+  steps:
+  - intent: faq_not
+  - action: utter_faq_not
+- story: faq_show_story
+  steps:
+  - intent: faq_show
+  - action: utter_faq_show
+- story: faq_second_story
+  steps:
+  - intent: faq_second
+  - action: utter_faq_second
+- story: faq_survive_story
+  steps:
+  - intent: faq_survive
+  - action: utter_faq_survive
+- story: faq_illness_story
+  steps:
+  - intent: faq_illness
+  - action: utter_faq_illness
+- story: faq_happen_story
+  steps:
+  - intent: faq_happen
+  - action: utter_faq_happen
+- story: faq_spread_story
+  steps:
+  - intent: faq_spread
+  - action: utter_faq_spread
+- story: faq_help_story
+  steps:
+  - intent: faq_help
+  - action: utter_faq_help
+- story: faq_protecting_story
+  steps:
+  - intent: faq_protecting
+  - action: utter_faq_protecting
+- story: faq_danger_story
+  steps:
+  - intent: faq_danger
+  - action: utter_faq_danger
+- story: faq_symptoms_story
+  steps:
+  - intent: faq_symptoms
+  - action: utter_faq_symptoms
+- story: faq_isolate_story
+  steps:
+  - intent: faq_isolate
+  - action: utter_faq_isolate
+- story: faq_Self-isolate_story
+  steps:
+  - intent: faq_Self-isolate
+  - action: utter_faq_Self-isolate
+- story: faq_live_story
+  steps:
+  - intent: faq_live
+  - action: utter_faq_live
+- story: faq_reduce_story
+  steps:
+  - intent: faq_reduce
+  - action: utter_faq_reduce
+- story: faq_treat _story
+  steps:
+  - intent: faq_treat 
+  - action: utter_faq_treat 
+- story: faq_ibuprofen_story
+  steps:
+  - intent: faq_ibuprofen
+  - action: utter_faq_ibuprofen
+- story: faq_leave_story
+  steps:
+  - intent: faq_leave
+  - action: utter_faq_leave
+- story: faq_appointment_story
+  steps:
+  - intent: faq_appointment
+  - action: utter_faq_appointment
+- story: faq_stay_story
+  steps:
+  - intent: faq_stay
+  - action: utter_faq_stay
+- story: faq_work _story
+  steps:
+  - intent: faq_work 
+  - action: utter_faq_work 
+- story: faq_essential_story
+  steps:
+  - intent: faq_essential
+  - action: utter_faq_essential
+- story: faq_friends_story
+  steps:
+  - intent: faq_friends
+  - action: utter_faq_friends
+- story: faq_relatives_story
+  steps:
+  - intent: faq_relatives
+  - action: utter_faq_relatives
+- story: faq_person_story
+  steps:
+  - intent: faq_person
+  - action: utter_faq_person
+- story: faq_park_story
+  steps:
+  - intent: faq_park
+  - action: utter_faq_park
+- story: faq_house_story
+  steps:
+  - intent: faq_house
+  - action: utter_faq_house
+- story: faq_green_story
+  steps:
+  - intent: faq_green
+  - action: utter_faq_green
+- story: faq_break_story
+  steps:
+  - intent: faq_break
+  - action: utter_faq_break
+- story: faq_have_story
+  steps:
+  - intent: faq_have
+  - action: utter_faq_have
+- story: faq_prevention_story
+  steps:
+  - intent: faq_prevention
+  - action: utter_faq_prevention
+- story: faq_residence_story
+  steps:
+  - intent: faq_residence
+  - action: utter_faq_residence
+- story: faq_teaching_story
+  steps:
+  - intent: faq_teaching
+  - action: utter_faq_teaching
+- story: faq_what_story
+  steps:
+  - intent: faq_what
+  - action: utter_faq_what
+- story: faq_social_story
+  steps:
+  - intent: faq_social
+  - action: utter_faq_social
+- story: faq_effect_story
+  steps:
+  - intent: faq_effect
+  - action: utter_faq_effect
+- story: faq_baby_story
+  steps:
+  - intent: faq_baby
+  - action: utter_faq_baby
+- story: faq_pregnant_story
+  steps:
+  - intent: faq_pregnant
+  - action: utter_faq_pregnant
+- story: faq_travelling_story
+  steps:
+  - intent: faq_travelling
+  - action: utter_faq_travelling
+- story: faq_natal_story
+  steps:
+  - intent: faq_natal
+  - action: utter_faq_natal
+- story: faq_fever_story
+  steps:
+  - intent: faq_fever
+  - action: utter_faq_fever
+- story: faq_impact_story
+  steps:
+  - intent: faq_impact
+  - action: utter_faq_impact
+- story: faq_childbirth_story
+  steps:
+  - intent: faq_childbirth
+  - action: utter_faq_childbirth
+- story: faq_labour_birth_story
+  steps:
+  - intent: faq_labour_birth
+  - action: utter_faq_labour_birth
+- story: faq_induced_story
+  steps:
+  - intent: faq_induced
+  - action: utter_faq_induced
+- story: faq_operation_story
+  steps:
+  - intent: faq_operation
+  - action: utter_faq_operation
+- story: faq_advice_story
+  steps:
+  - intent: faq_advice
+  - action: utter_faq_advice
+- story: faq_tested_story
+  steps:
+  - intent: faq_tested
+  - action: utter_faq_tested
+- story: faq_positive_story
+  steps:
+  - intent: faq_positive
+  - action: utter_faq_positive
+- story: faq_contact_story
+  steps:
+  - intent: faq_contact
+  - action: utter_faq_contact
+- story: faq_should_story
+  steps:
+  - intent: faq_should
+  - action: utter_faq_should
+- story: faq_care_story
+  steps:
+  - intent: faq_care
+  - action: utter_faq_care
+- story: faq_unwell_story
+  steps:
+  - intent: faq_unwell
+  - action: utter_faq_unwell
+- story: faq_birth_story
+  steps:
+  - intent: faq_birth
+  - action: utter_faq_birth
+- story: faq_affect_story
+  steps:
+  - intent: faq_affect
+  - action: utter_faq_affect
+- story: faq_labour_story
+  steps:
+  - intent: faq_labour
+  - action: utter_faq_labour
+- story: faq_pass_story
+  steps:
+  - intent: faq_pass
+  - action: utter_faq_pass
+- story: faq_baby_test_story
+  steps:
+  - intent: faq_baby_test
+  - action: utter_faq_baby_test
+- story: faq_origin_story
+  steps:
+  - intent: faq_origin
+  - action: utter_faq_origin
+- story: faq_name_story
+  steps:
+  - intent: faq_name
+  - action: utter_faq_name
+- story: faq_blame_story
+  steps:
+  - intent: faq_blame
+  - action: utter_faq_blame
+- story: faq_stigma_story
+  steps:
+  - intent: faq_stigma
+  - action: utter_faq_stigma
+- story: faq_sources_story
+  steps:
+  - intent: faq_sources
+  - action: utter_faq_sources
+- story: faq_how_story
+  steps:
+  - intent: faq_how
+  - action: utter_faq_how
+- story: faq_rise_story
+  steps:
+  - intent: faq_rise
+  - action: utter_faq_rise
+- story: faq_someone_story
+  steps:
+  - intent: faq_someone
+  - action: utter_faq_someone
+- story: faq_restaurant_story
+  steps:
+  - intent: faq_restaurant
+  - action: utter_faq_restaurant
+- story: faq_sickness_story
+  steps:
+  - intent: faq_sickness
+  - action: utter_faq_sickness
+- story: faq_warm_story
+  steps:
+  - intent: faq_warm
+  - action: utter_faq_warm
+- story: faq_community_story
+  steps:
+  - intent: faq_community
+  - action: utter_faq_community
+- story: faq_temperature_story
+  steps:
+  - intent: faq_temperature
+  - action: utter_faq_temperature
+- story: faq_mosquitoes_story
+  steps:
+  - intent: faq_mosquitoes
+  - action: utter_faq_mosquitoes
+- story: faq_protection_story
+  steps:
+  - intent: faq_protection
+  - action: utter_faq_protection
+- story: faq_close_story
+  steps:
+  - intent: faq_close
+  - action: utter_faq_close
+- story: faq_face_story
+  steps:
+  - intent: faq_face
+  - action: utter_faq_face
+- story: faq_shipping_story
+  steps:
+  - intent: faq_shipping
+  - action: utter_faq_shipping
+- story: faq_donate_story
+  steps:
+  - intent: faq_donate
+  - action: utter_faq_donate
+- story: faq_major_risk_story
+  steps:
+  - intent: faq_major_risk
+  - action: utter_faq_major_risk
+- story: faq_infection_story
+  steps:
+  - intent: faq_infection
+  - action: utter_faq_infection
+- story: faq_adults_story
+  steps:
+  - intent: faq_adults
+  - action: utter_faq_adults
+- story: faq_children_story
+  steps:
+  - intent: faq_children
+  - action: utter_faq_children
+- story: faq_prepare_story
+  steps:
+  - intent: faq_prepare
+  - action: utter_faq_prepare
+- story: faq_family_prepare_story
+  steps:
+  - intent: faq_family_prepare
+  - action: utter_faq_family_prepare
+- story: faq_reduce_risk_story
+  steps:
+  - intent: faq_reduce_risk
+  - action: utter_faq_reduce_risk
+- story: faq_house_sick_story
+  steps:
+  - intent: faq_house_sick
+  - action: utter_faq_house_sick
+- story: faq_prepare_at_work_story
+  steps:
+  - intent: faq_prepare_at_work
+  - action: utter_faq_prepare_at_work
+- story: faq_sanitizer_story
+  steps:
+  - intent: faq_sanitizer
+  - action: utter_faq_sanitizer
+- story: faq_clean_story
+  steps:
+  - intent: faq_clean
+  - action: utter_faq_clean
+- story: faq_home_sanitizer_story
+  steps:
+  - intent: faq_home_sanitizer
+  - action: utter_faq_home_sanitizer
+- story: faq_complications_story
+  steps:
+  - intent: faq_complications
+  - action: utter_faq_complications
+- story: faq_most_risk_story
+  steps:
+  - intent: faq_most_risk
+  - action: utter_faq_most_risk
+- story: faq_ill_story
+  steps:
+  - intent: faq_ill
+  - action: utter_faq_ill
+- story: faq_pets_story
+  steps:
+  - intent: faq_pets
+  - action: utter_faq_pets
+- story: faq_prevent_ill_story
+  steps:
+  - intent: faq_prevent_ill
+  - action: utter_faq_prevent_ill
+
+
+- story: faq_faq_mortality_story
+  steps:
+  - intent: faq_faq_mortality
+  - action: utter_faq_mortality
+

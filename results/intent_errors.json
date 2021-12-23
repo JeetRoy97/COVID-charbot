@@ -1,0 +1,186 @@
+[
+  {
+    "text": "thanks for the help",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.514615535736084
+    }
+  },
+  {
+    "text": "thanks",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.5737529993057251
+    }
+  },
+  {
+    "text": "what is social distancing",
+    "intent": "faq_distancing",
+    "intent_prediction": {
+      "name": "faq_109",
+      "confidence": 0.7361624240875244
+    }
+  },
+  {
+    "text": "what is the corona virus?",
+    "intent": "faq_whatisit",
+    "intent_prediction": {
+      "name": "faq_181",
+      "confidence": 0.2424953579902649
+    }
+  },
+  {
+    "text": "What is a corona virus?",
+    "intent": "faq_3",
+    "intent_prediction": {
+      "name": "faq_133",
+      "confidence": 0.26590487360954285
+    }
+  },
+  {
+    "text": "How long will it take to develop a vaccine?",
+    "intent": "faq_34",
+    "intent_prediction": {
+      "name": "faq_vaccine",
+      "confidence": 0.6370440721511841
+    }
+  },
+  {
+    "text": "Can I catch COVID-19 from my pet?",
+    "intent": "faq_56",
+    "intent_prediction": {
+      "name": "faq_73",
+      "confidence": 0.4280954897403717
+    }
+  },
+  {
+    "text": "Are antibiotics effective in preventing or treating the COVID-19?",
+    "intent": "faq_68",
+    "intent_prediction": {
+      "name": "faq_174",
+      "confidence": 0.4472871720790863
+    }
+  },
+  {
+    "text": "Are there any medicines or therapies that can prevent or cure COVID-19",
+    "intent": "faq_69",
+    "intent_prediction": {
+      "name": "faq_192",
+      "confidence": 0.5973760485649109
+    }
+  },
+  {
+    "text": "Should I wear mask to protect myself",
+    "intent": "faq_70",
+    "intent_prediction": {
+      "name": "faq_195",
+      "confidence": 0.5467270016670227
+    }
+  },
+  {
+    "text": "How to put on use take off and dispose of a mask?",
+    "intent": "faq_71",
+    "intent_prediction": {
+      "name": "faq_196",
+      "confidence": 0.5639129877090454
+    }
+  },
+  {
+    "text": "What are the symptoms of someone infected with a corona virus?",
+    "intent": "faq_85",
+    "intent_prediction": {
+      "name": "faq_5",
+      "confidence": 0.5047874450683594
+    }
+  },
+  {
+    "text": "What is corona virus ?",
+    "intent": "faq_108",
+    "intent_prediction": {
+      "name": "faq_133",
+      "confidence": 0.25998422503471375
+    }
+  },
+  {
+    "text": "Who is most at risk for the corona virus disease?",
+    "intent": "faq_165",
+    "intent_prediction": {
+      "name": "faq_1",
+      "confidence": 0.48901107907295227
+    }
+  },
+  {
+    "text": "Can I get covid-19 from my pets or other animals ?",
+    "intent": "faq_179",
+    "intent_prediction": {
+      "name": "faq_167",
+      "confidence": 0.6123281717300415
+    }
+  },
+  {
+    "text": "What is corona virus",
+    "intent": "faq_181",
+    "intent_prediction": {
+      "name": "faq_133",
+      "confidence": 0.25998422503471375
+    }
+  },
+  {
+    "text": "Can the virus that causes COVID-19 be transmitted through the air?",
+    "intent": "faq_184",
+    "intent_prediction": {
+      "name": "faq_62",
+      "confidence": 0.4971309304237366
+    }
+  },
+  {
+    "text": "Can I catch COVID-19 from the feces of someone with the disease?",
+    "intent": "faq_186",
+    "intent_prediction": {
+      "name": "faq_63",
+      "confidence": 0.5576261878013611
+    }
+  },
+  {
+    "text": "How likely am I to catch COVID-19?",
+    "intent": "faq_188",
+    "intent_prediction": {
+      "name": "faq_66",
+      "confidence": 0.5814996361732483
+    }
+  },
+  {
+    "text": "Should I worry about COVID-19?",
+    "intent": "faq_189",
+    "intent_prediction": {
+      "name": "faq_67",
+      "confidence": 0.5730555653572083
+    }
+  },
+  {
+    "text": "Are antibiotics effective in preventing or treating the COVID-19?",
+    "intent": "faq_191",
+    "intent_prediction": {
+      "name": "faq_174",
+      "confidence": 0.4472871720790863
+    }
+  },
+  {
+    "text": "Can I catch COVID-19 from my pet?",
+    "intent": "faq_198",
+    "intent_prediction": {
+      "name": "faq_73",
+      "confidence": 0.4280954897403717
+    }
+  },
+  {
+    "text": "Is it safe to receive a package from any area where COVID-19 has been reported?",
+    "intent": "faq_200",
+    "intent_prediction": {
+      "name": "faq_74",
+      "confidence": 0.5965805053710938
+    }
+  }
+]

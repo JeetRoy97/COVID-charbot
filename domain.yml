@@ -1,0 +1,836 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- out_of_scope
+- smalltalk_human
+- faq_distancing
+- faq_supplies
+- faq_whatisit
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- inform
+- search_provider
+- thanks
+- get_name
+- faq_incubation
+- faq_risk
+- faq_SARS
+- faq_virus
+- faq_source
+- faq_transmit
+- faq_vaccine
+- faq_treatment
+- faq_protect
+- faq_workers
+- faq_WHO
+- faq_child
+- faq_family
+- faq_test
+- faq_information
+- faq_SARA_CoV_2
+- faq_seasonal
+- faq_transmission
+- faq_infectitious
+- faq_severe
+- faq_life
+- faq_pregnancy
+- faq_testing
+- faq_centre
+- faq_allergy
+- faq_fever
+- faq_isolation
+- faq_avoid
+- faq_avoiding
+- faq_distance
+- faq_mask
+- faq_time
+- faq_influenza
+- faq_situation
+- faq_preparation
+- faq_condition
+- faq_infected
+- faq_outbreak
+- faq_schools
+- faq_travel
+- faq_precautions
+- faq_plane
+- faq_package
+- faq_food
+- faq_animal
+- faq_lung
+- faq_respiration
+- faq_sick
+- faq_isolating
+- faq_outside
+- faq_respiratory
+- faq_cough
+- faq_protection
+- faq_pet
+- faq_smoke
+- faq_old
+- faq_vulnerable
+- faq_elder
+- faq_organisation
+- faq_air
+- faq_feces
+- faq_prevent
+- faq_measures
+- faq_likely
+- faq_worry
+- faq_antibiotics
+- faq_medicines
+- faq_wear
+- faq_dispose
+- faq_period
+- faq_catch
+- faq_receive
+- faq_not
+- faq_show
+- faq_second
+- faq_survive
+- faq_illness
+- faq_happen
+- faq_spread
+- faq_help
+- faq_protecting
+- faq_danger
+- faq_symptoms
+- faq_isolate
+- faq_Self-isolate
+- faq_live
+- faq_reduce
+- faq_treat
+- faq_ibuprofen
+- faq_leave
+- faq_appointment
+- faq_stay
+- faq_work
+- faq_essential
+- faq_friends
+- faq_relatives
+- faq_person
+- faq_park
+- faq_house
+- faq_green
+- faq_break
+- faq_have
+- faq_prevention
+- faq_residence
+- faq_teaching
+- faq_what
+- faq_social
+- faq_effect
+- faq_baby
+- faq_pregnant
+- faq_travelling
+- faq_natal
+- faq_impact
+- faq_childbirth
+- faq_labour_birth
+- faq_induced
+- faq_operation
+- faq_advice
+- faq_tested
+- faq_positive
+- faq_contact
+- faq_should
+- faq_care
+- faq_unwell
+- faq_birth
+- faq_affect
+- faq_labour
+- faq_pass
+- faq_baby_test
+- faq_origin
+- faq_name
+- faq_blame
+- faq_stigma
+- faq_sources
+- faq_how
+- faq_rise
+- faq_someone
+- faq_restaurant
+- faq_sickness
+- faq_warm
+- faq_community
+- faq_temperature
+- faq_mosquitoes
+- faq_close
+- faq_face
+- faq_shipping
+- faq_donate
+- faq_major_risk
+- faq_infection
+- faq_adults
+- faq_children
+- faq_prepare
+- faq_family_prepare
+- faq_reduce_risk
+- faq_house_sick
+- faq_prepare_at_work
+- faq_sanitizer
+- faq_clean
+- faq_home_sanitizer
+- faq_complications
+- faq_most_risk
+- faq_ill
+- faq_pets
+- faq_prevent_ill
+- faq_mortality
+
+entities:
+- location
+- facility_type
+- emailid
+- mobilenumber
+- username
+- name
+
+slots:
+  address:
+    type: unfeaturized
+  facility_type:
+    type: text
+  location:
+    type: text
+  username:
+    type: unfeaturized
+  emailid:
+    type: unfeaturized
+  mobilenumber:
+    type: unfeaturized
+
+responses:
+  utter_subscribed:
+  - text: Check your inbox
+  utter_address:
+  - text: The address is {address}.
+  utter_ask_location:
+  - text: Please Provide your location?
+  utter_ask_username:
+  - text: Please enter your name (Enter) and email id (Enter)?
+  utter_ask_email:
+  - text: Please enter your Email Id?
+  utter_ask_mobilenumber:
+  - text: Please enter your Mobile Number?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: Here is something to cheer you up
+  - text: "Let's hear a joke: I got another letter from this lawyer today. It said\
+      \ “Final Notice”. Good that he will not bother me anymore."
+  - text: "Let's hear a joke: What is the worst combination of illnesses? -Alzheimer’s\
+      \ and diarrhea. You’re running, but can’t remember where."
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_faq_distancing:
+  - text: Social distancing, also called “physical distancing,” means keeping space
+      between yourself and other people outside of your home. To practice social or
+      physical distancing Stay at least 6 feet (2 meters) from other people Do not
+      gather in groups Stay out of crowded places and avoid mass gatherings
+  - text: Social distancing, or physical distancing, is a set of non-pharmaceutical
+      interventions or measures taken to prevent the spread of a contagious disease
+      by maintaining a physical distance between people and reducing the number of
+      times people come into close contact with each other.
+  - text: The new coronavirus is a respiratory virus which spreads primarily through
+      droplets generated when an infected person coughs or sneezes, or through droplets
+      of saliva or discharge from the nose. To protect yourself, clean your hands
+      frequently with an alcohol-based hand rub or wash them with soap and water.
+  utter_faq_supplies:
+  - text: India is adapting the world’s largest portfolio of food distribution and
+      safety net programs to provide food to its poorest citizens
+  - text: All the necessary and essential supplies will be available. Online Food,
+      grocery Delivery companies will be operational.
+  utter_faq_symptoms:
+  - text: COVID-19 affects different people in different ways. Most infected people
+      will develop mild to moderate symptoms.Common symptoms:fever, tiredness, dry
+      coughSome people may experience:aches and pains, nasal congestion, runny nose,
+      sore throat, diarrhoea. On average it takes 5–6 days from when someone is infected
+      with the virus for symptoms to show, however it can take up to 14 days
+  - text: The virus can cause a range of symptoms, from ranging from mild illness
+      to pneumonia. Symptoms of the disease are fever, cough, sore throat and headaches.
+  - text: Most people infected with the COVID-19 virus will experience mild to moderate
+      respiratory illness and recover without requiring special treatment. Older people,
+      and those with underlying medical problems like cardiovascular disease, diabetes,
+      chronic respiratory disease, and cancer are more likely to develop serious illness.
+  - text: People with COVID-19 generally develop signs and symptoms, including mild
+      respiratory symptoms and fever, on an average of 5-6 days after infection (mean
+      incubation period 5-6 days, range 1-14 days). Most people infected with COVID-19
+      virus have mild disease and recover.
+  utter_faq_testing:
+  - text: Covid-19 testing can identify the SARS-CoV-2 virus (virus responsible for
+      COVID-19) and includes methods that detect the presence of virus itself (RT-PCR
+      and isothermal nucleic acid amplification) and those that detect antibodies
+      produced in response to infection
+  - text: COVID-19 testing differs by location. If you have symptoms of COVID-19 and
+      want to get tested, call your medical provider first. You can also visit your
+      state or health department’s website to look for the latest local information
+      on testing. While supplies of these tests are increasing, it may still be difficult
+      to find a place to get tested.
+  utter_faq_vaccine:
+  - text: When a disease is new, there is no vaccine until one is developed. It can
+      take a few months to number of years for a new vaccine to be developed.
+  - text: There is no specific treatment for disease caused by a novel coronavirus.
+      However, many of the symptoms can be treated and therefore treatment based on
+      the patient's clinical condition.
+  - text: Currently hydroxychloroquine is being used to treat patients in case of
+      severe illness."
+  - text: No, antibiotics do not work against viruses. The 2019-nCOV is a virus and,
+      therefore, antibiotics should not be used as a means of prevention or treatment.
+  utter_faq_vulnerable:
+  - text: People of all ages can be infected by the new coronavirus (2019-nCoV). Older
+      people, and people with pre-existing medical conditions (such as asthma, diabetes,
+      heart disease) appear to be more vulnerable to becoming severely ill with the
+      virus.
+  - text: Current evidence on other coronavirus strains shows that while coronaviruses
+      appear to be stable at low and freezing temperatures for a certain period, food
+      hygiene and good food safety practices can prevent their transmission through
+      food.
+  utter_faq_whatisit:
+  - text: Coronaviruses are a family of viruses that range from the common cold to
+      MERS coronavirus, which is Middle East Respiratory Syndrome coronavirus and
+      SARs, Severe acute respiratory syndrome coronavirus.
+  - text: The new coronavirus is a respiratory virus which spreads primarily through
+      droplets generated when an infected person coughs or sneezes, or through droplets
+      of saliva or discharge from the nose. To protect yourself, clean your hands
+      frequently with an alcohol-based hand rub or wash them with soap and water.
+  utter_goodbye:
+  - text: See you soon!
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: Great carry on!
+  utter_how_can_i_help:
+  - text: Hi! I am Covid-19 assistant. I can give you basic information on COVID-19.
+  utter_out_of_scope:
+  - text: I wish I could answer your question, Please ask some other question please.
+  - text: Sorry I don't know the answer, can you please ask questions related to COVID-19?
+  utter_smalltalk_human:
+  - text: Yes, I am a COVID-19 Assistant here to help you find answers.
+  - text: Yes I am a Robot to assist you in COVID-19 realated questions.
+  utter_submit:
+  - text: Hello {username} from {location}. How may I help you?
+  utter_thanks:
+  - text: You are wellcome!
+  utter_form_thanks:
+  - text: Thank you for the details! How may I help you?
+  utter_faq_incubation:
+  - text: The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease. Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available.
+  utter_faq_risk:
+  - text: People of all ages can be infected by the new corona virus (2019-nCoV). Older people, and people with pre-existing medical conditions (such as asthma, diabetes, heart disease) appear to be more vulnerable to becoming severely ill with the virus.WHO advises people of all ages to take steps to protect themselves from the virus, for example by following good hand hygiene and good respiratory hygiene.
+  utter_faq_SARS:
+  - text: No. The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other genetically, but the diseases they cause are quite different.
+  utter_faq_virus:
+  - text: corona viruses are a large family of viruses that are known to cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS).
+  utter_faq_source:
+  - text: Detailed investigations found that SARS-CoV was transmitted from civet cats to humans in China in 2002 and MERS-CoV from dromedary camels to humans in Saudi Arabia in 2012. Several known corona viruses are circulating in animals that have not yet infected humans. As surveillance improves around the world, more corona viruses are likely to be identified.
+  utter_faq_transmit:
+  - text: Yes, some corona viruses can be transmitted from person to person, usually after close contact with an infected patient, for example, in a household workplace, or health care centre.
+  utter_faq_treatment:
+  - text: There is no specific treatment for disease caused by a novel corona virus. However, many of the symptoms can be treated and therefore treatment based on the patient’s clinical condition. Moreover, supportive care for infected persons can be highly effective.
+  utter_faq_protect:
+  - text: Standard recommendations to reduce exposure to and transmission of a range of illnesses include maintaining basic hand and respiratory hygiene, and safe food practices  and avoiding close contact, when possible, with anyone showing symptoms of respiratory illness such as coughing and sneezing.
+  utter_faq_workers:
+  - text: Yes, they can be, as health care workers come into contact with patients more often than the general public WHO recommends that health care workers consistently apply appropriate
+  utter_faq_WHO:
+  - text: WHO encourages all countries to enhance their surveillance for severe acute respiratory infections (SARI), to carefully review any unusual patterns of SARI or pneumonia cases and to notify WHO of any suspected or confirmed case of infection with novel corona virus. Countries are encouraged to continue strengthening their preparedness for health emergencies in line with the International Health Regulations (2005).
+  utter_faq_child:
+  - text: Experts are still learning about corona virus, but it seems to usually cause a milder illness in children than in adults or older people. Most people who have died from corona virus were older adults or people with health problems, such as heart disease, lung disease, or diabetes.
+  utter_faq_family:
+  - text: The symptoms of corona virus (fever, cough, and trouble breathing) can look a lot like illnesses from other viruses. If a family member has trouble breathing, go to the emergency room or call an ambulance right away. Call your doctor if someone in your family has a fever, cough, or other flu-like symptoms. If this person has been near someone with corona virus or lived in or traveled to an area where lots of people have corona virus, tell the doctor. The doctor can decide whether your family member can be treated at home should come in for a visit can have a telehealth visit needs to be tested for corona virus
+  utter_faq_test:
+  - text: To test someone for corona virus, doctors send a mucus sample from the nose and back of the throat to a lab. If the person coughs up mucus, doctors might send that for testing too.
+  utter_faq_information:
+  - text: Check the CDC and World Health Organization (WHO) websites for up-to-date, reliable information about corona virus.
+  utter_faq_SARA_CoV_2:
+  - text: Severe Acute Respiratory Syndrome Coronavirus-2 (SARS-CoV-2) is the name given to the 2019 novel coronavirus. COVID-19 is the name given to the disease associated with the virus. SARS-CoV-2 is a new strain of coronavirus that has not been previously identified in humans.
+  utter_faq_origin:
+  - text: corona viruses are viruses that circulate among animals with some of them also known to infect humans. Bats are considered natural hosts of these viruses yet several other species of animals are also known to act as sources. For instance, Middle East Respiratory Syndrome corona virus (MERS-CoV) is transmitted to humans from camels, and Severe Acute Respiratory Syndrome corona virus-1 (SARS-CoV-1) is transmitted to humans from civet cats. More information on corona viruses can be found in the ECDC factsheet.
+  utter_faq_seasonal:
+  - text: The novel corona virus detected in China in 2019 is closely related genetically to the SARS-CoV-1 virus. SARS emerged at the end of 2002 in China, and it caused more than 8 000 cases in 33 countries over a period of eight months. Around one in ten of the people who developed SARS died. As of 30 March 2020, the COVID-19 outbreak had caused over 700 000 cases worldwide since the first case was reported in China in January 2020. Of these, more than 30 000 are known to have died. While the viruses that cause both COVID-19 and seasonal influenza are transmitted from person-to-person and may cause similar symptoms, the two viruses are very different and do not behave in the same way.
+  utter_faq_transmission:
+  - text: While animals are believed to be the original source, the virus spread is now from person to person (human-to-human transmission). There is not enough epidemiological information at this time to determine how easily this virus spreads between people, but it is currently estimated that, on average, one infected person will infect between two and three other people. The virus seems to be transmitted mainly via small respiratory droplets through sneezing, coughing, or when people interact with each other for some time in close proximity (usually less than one metre). These droplets can then be inhaled, or they can land on surfaces that others may come into contact with, who can then get infected when they touch their nose, mouth or eyes. The virus can survive on different surfaces from several hours (copper, cardboard) up to a few days (plastic and stainless steel). However, the amount of viable virus declines over time and may not always be present in sufficient numbers to cause infection. The incubation period for COVID-19 (i.e. the time between exposure to the virus and onset of symptoms) is currently estimated to bet between one and 14 days. We know that the virus can be transmitted when people who are infected show symptoms such as coughing. There is also some evidence suggesting that transmission can occur from a person that is infected even two days before showing symptoms; however, uncertainties remain about the effect of transmission by  non-symptomatic persons.
+  utter_faq_infectitious:
+  - text: The infectious period may begin one to two days before symptoms appear, but people are likely most infectious during the symptomatic period, even if symptoms are mild and very non-specific. The infectious period is now estimated to last for 7-12 days in moderate cases and up to two weeks on average in severe cases.
+  utter_faq_severe:
+  - text: Preliminary data from the EU/EEA (from the countries with available data) show that around 20-30% of diagnosed COVID-19 cases are hospitalised and 4% have severe illness. Hospitalisation rates are higher for those aged 60 years and above, and for those with other underlying health conditions.
+  utter_faq_life:
+  - text: Elderly people above 70 years of age and those with underlying health conditions (e.g. hypertension, diabetes, cardiovascular disease, chronic respiratory disease and cancer) are considered to be more at risk of developing severe symptoms. Men in these groups also appear to be at a slightly higher risk than females.
+  utter_faq_children:
+  - text: Children make up a very small proportion of reported COVID-19 cases, with about 1% of all cases reported being under 10 years, and 4% aged 10-19 years. Children appear as likely to be infected as adults, but they have a much lower risk than adults of developing symptoms or severe disease. There is still some uncertainty about the extent to which asymptomatic or mildly symptomatic children transmit disease.
+  utter_faq_pregnancy:
+  - text: There is limited scientific evidence on the severity of illness in pregnant women after COVID-19 infection. It seems that pregnant women appear to experience similar clinical manifestations as non-pregnant women who have progressed to COVID-19 pneumonia and to date (as of 25 March), there have been no maternal deaths, no pregnancy losses and only one stillbirth reported. No current evidence suggests that infection with COVID-19 during pregnancy has a negative effect on the foetus. At present, there is no evidence of transmission of COVID-19 from mother to baby during pregnancy and only one confirmed COVID-19 neonatal case has been reported to date. ECDC will continue to monitor the emerging scientific literature on this question, and suggests that all pregnant women follow the same general precautions for the prevention of COVID-19, including regular handwashing, avoiding individuals who are sick, and self-isolating in case of any symptoms, while consulting a healthcare provider by telephone for advice.
+  utter_faq_centre:
+  - text: If you are feeling ill with COVID-19 symptoms (such as fever, cough, difficulty breathing, muscle pain or general weakness), it is recommended that you contact your local healthcare services online or by telephone. If your healthcare provider believes there is a need for a laboratory test for the virus that causes COVID-19, he/she will inform you of the procedure to follow and advise where and how the test can be performed.
+  utter_faq_allergy:
+  - text: A large proportion of the population (up to 15-20%) reports seasonal symptoms related to pollen, the most common of which include itchy eyes, nasal congestion, runny nose and sometimes wheezing and skin rash. All these symptoms are usually referred to as hay fever, pollen allergy or more appropriately allergic rhinitis. Allergic rhinitis is commonly associated with allergic asthma in children and adults. Allergies, including mild allergic asthma, have not been identified as a major risk factor for SARS-CoV-2 infection or for a more unfavourable outcome in the studies available so far. Moderate to severe asthma on the other hand, where patients need treatment daily, is included in the chronic lung conditions that predispose to severe disease. Children and adults on maintenance medication for allergies (e.g. leukotriene inhibitors, inhaled corticosteroids and/or bronchodilators) need to continue their treatment as prescribed by their doctor and should not discontinue their medication due to fears of COVID-19. If they develop symptoms compatible with COVID-19, they will need to self-isolate, inform their doctor and monitor their health as everyone else. If progressive difficulty breathing develops, they should seek prompt medical assistance.
+  utter_faq_fever:
+  - text: Someone with COVID-19 usually has mild, flu-like symptoms (see above question 1), which are rather common and need to be distinguished from similar symptoms caused by common cold viruses and from allergic symptoms during springtime. The following table presents a comparison of the most common symptoms of all three conditions according to their reported frequency. It is good to bear in mind that the definitive diagnosis of COVID-19 is not clinical, but through laboratory testing of a sample from the nose or mouth.
+  utter_faq_isolation:
+  - text: No, there is no more reason for people suffering from pollen allergy to self-isolate if they develop their typical hay-fever symptoms than for anyone else. They should continue following the general guidance for physical distancing and seek medical advice if their symptoms get worse, if they develop fever or progressive difficulty breathing.
+  utter_faq_avoid:
+  - text: The virus enters your body via your eyes, nose and/or mouth, so it is important to avoid touching your face with unwashed hands. Washing of hands with soap and water for at least 20 seconds, or cleaning hands thoroughly with alcohol-based solutions, gels or tissues is recommended in all settings. It is also recommended to stay one metre or more away from people infected with COVID-19 who are showing symptoms, to reduce the risk of infection through respiratory droplets.
+  utter_faq_avoiding:
+  - text: Cough or sneeze into your elbow or use a tissue. If you use a tissue, dispose of it carefully after a single use Wash your hands with soap and water for at least 20 seconds. Stay one metre or more away from people to reduce the risk of spreading the virus through respiratory droplets.  If you feel unwell, stay at home. If you develop any symptoms suggestive of COVID-19, you should immediately call your healthcare provider for advice.
+  utter_faq_distance:
+  - text: Physical distancing aims to reduce physical contact between potentially infected people and healthy people, or between population groups with high rates of transmission and others with low or no level of transmission. The objective of this is to decrease or interrupt the spread of COVID-19. Note that the term ‘physical distancing’ means the same thing as the widely used term ‘social distancing’, but it more accurately describes what is intended, namely that people keep physically apart. Physical distancing measures might be implemented over an extended period and their success depends on ensuring that people maintain social contact – from a distance – with friends, family and colleagues. Internet-based communications and the phone are therefore key tools for ensuring a successful physical distancing strategy.
+  utter_faq_mask:
+  - text: If you are infected, the use of surgical face masks may reduce the risk of you infecting other people. On the other hand there is no evidence that face masks will effectively prevent you from becoming infected with the virus. In fact, it is possible that the use of face masks may even increase the risk of infection due to a false sense of security and increased contact between hands, mouth and eyes while wearing them. The inappropriate use of masks also may increase the risk of infection.
+  utter_faq_time:
+  - text: The development of vaccines take time. Several pharmaceutical companies and research laboratories are working on vaccine candidates. It will, however, take months or years before any vaccine can be widely used, as it needs to undergo extensive testing in clinical trials to determine its safety and efficacy.  These clinical trials are an essential precursor to regulatory approval and usually take place in three phases. The first, involving a few dozen healthy volunteers, tests the vaccine for safety, monitoring for adverse effects. The second, involving several hundred people, usually in a part of the world badly affected by the disease, looks at how effective the vaccine is in the field, and the third does the same in several thousand people.
+  utter_faq_influenza:
+  - text: Influenza and the virus that causes COVID-19 are two very different viruses and the seasonal influenza vaccine will not protect against COVID-19.  
+  utter_faq_situation:
+  - text: In the last month, the number of cases and deaths reported in the EU/EEA has increased exponentially from less than 2 000 cases to more than 350 000 (as of 30 March). During this time, all EU/EEA countries have reported increasing numbers of new cases; Italy has reported more than 90 000 new cases and Spain more than 75 000 new cases. If this trend continues, based on the quick pace of growth of the epidemic observed in China and northern Italy, it is likely that in days, or a small number of weeks, nationally incapacitating epidemics will be observed in most EU/EEA Member States.
+  utter_faq_preparation:
+  - text: The outbreak of COVID-19 has evolved dramatically in the EU/EEA and the UK. The rapid escalation of cases in countries such as Italy and Spain has placed enormous pressure on healthcare systems, and presented a major challenge for local services. All countries in the EU have responded to the emerging situation. The situation continues to evolve and lessons are still being learnt and countries are working hard to adapt their response to the ever changing situation.
+  utter_faq_condition:
+  - text: The European Centre for Disease Prevention and Control (ECDC) is in continuous contact with the European Commission and the World Health Organization (WHO) regarding the assessment of this outbreak. To inform the European Commission and the public health authorities in Member States of the ongoing situation, ECDC publishes daily updates and continuously assesses the risk for EU citizens. ECDC and WHO develop technical guidance to support countries in their response. The European Commission is ensuring the coordination of risk management activities at EU level. The European Commission is organising regular coordination meetings between the Ministers of the Member States and providing some support for overcoming the equipment and supplies shortages that are being felt in many countries.
+  utter_faq_infected:
+  - text: COVID-19 is spreading rapidly worldwide, and the number of cases in Europe is increasing exponentially in many affected areas.
+  utter_faq_outbreak:
+  - text: Any predictions about when the peak will come and how long the outbreak will last are purely speculative at this stage. As greater evidence emerges regarding the nature of the virus and the effectiveness of measures used to control the outbreak, predictions relating to the future course of COVID-19 will become more reliable. 
+  utter_faq_schools:
+  - text: The evidence we have to date indicates that COVID-19 does not cause serious illness in children – not nearly as much as it does for adults. However, they can be infected as easily as adults, though the extent to which children play a role in the transmission of the virus to others is still uncertain. Depending on local circumstances, local authorities may decide to temporarily close schools and day care centres to reduce transmission in the community. However, school closures may have an impact on availability of healthcare staff and other essential services, due to the need for having to  care for their children when not in school, which needs to be taken into consideration (e.g. some countries only maintain schooling for these children of staff in a critical role). Also, if grandparents are asked to care for the children, the benefits of lower transmission between children might be offset by transmission into a more vulnerable population group. Wherever school closure happens, it is important that parents and caregivers are supported, for example by their employers applying teleworking or limited office shift schedules, so they can stay at home more and take care of their children.
+  utter_faq_travel:
+  - text: Travel has been shown to facilitate the spread of COVID-19 from affected to unaffected areas. Travel and trade restrictions during a public health event of international concern (PHEIC) are regulated under the International Health Regulations (IHR), part III. On 16 March, in an effort to slow the spread of the corona virus, the European Union leaders agreed to a temporary restriction on non-essential travel from third countries into the EU area by closing its borders for the next 30 days staring on 17 March 2020 The temporary travel restriction foresees exemptions for nationals of all EU Member States and Schengen Associated States (Iceland, Liechtenstein, Norway and Switzerland; whilst UK nationals are still to be treated in the same way as EU citizens until end 2020), for the purposes of returning to their homes. Exceptions are also foreseen for travellers with an essential function or need. In addition, most EU countries have also applied national borders closure and/or border checks and travel and transport restrictions or bans within their national borders and between different regions as a measure to slow the spread. See the measures implemented by EU Member States. Many EU countries have also encouraged their citizens to return home (with recommendations  for 14 days self-quarantine upon return) but also recommended that travellers avoid non-essential travels to areas with transmission of COVID-19.
+  utter_faq_precautions:
+  - text: Travellers should adhere to strict hygiene measures, wash hands with soap and water regularly, and/or use alcohol-based hand sanitisers. Touching the face with unwashed hands should be avoided. Travellers should avoid contact with sick persons, in particular those with respiratory symptoms and fever. It should be emphasised that older people and those with underlying health conditions should take these precautionary measures very seriously. Travellers who develop any symptoms during or after travel should self-isolate; those developing acute respiratory symptoms within 14 days upon return should be advised to seek immediate medical advice, ideally by phone first to their national healthcare provider.
+  utter_faq_plane:
+  - text: The risk of being infected on an airplane cannot be excluded, but is currently considered to be low for an individual traveller. The risk of being infected in an airport is similar to that of any other place where many people gather. If it is established that a COVID-19 case has been on an airplane, other passengers who were at risk (as defined by how near they were seated to the infected passenger) will be contacted by public health authorities. Should you have questions about a flight you have taken, please contact your local health authority for advice.  The European Union Aviation Safety Agency (EASA) recommended measures to be taken by national authorities, such as thorough disinfecting and cleaning of aircraft after each flight serving high-risk destinations. EASA also recommended that airlines operating on all routes step up the frequency of cleaning, disinfect as a preventative measure and ensure full disinfection of any aircraft which has carried a passenger who was suspected or confirmed as being infected with COVID-19. Airport operators should similarly disinfect terminals regularly.
+  utter_faq_package:
+  - text: People working in the supply chain, including logistics, control services, retail, etc. are not at greater risk to of getting COVID-19 as a result of managing packages. ECDC does not recommend any special measures at the supply chain over and above those addressed to the general public frequent and thorough hand washing and use of alcohol-based hand disinfectants, keeping a distance from other employees, and not working if showing signs of respiratory symptoms.
+  utter_faq_food:
+  - text: There has been no report of transmission of COVID-19 via food, and therefore there is no evidence that food items imported into the European Union in accordance with the applicable animal and public health regulations pose a risk for the health of EU citizens in relation to COVID-19. The main mode of transmission is from person to person.
+  utter_faq_animal:
+  - text: There is no evidence that any of the animals or animal products authorised for entry into the European Union pose a risk to the health of EU citizens as a result of the presence of COVID-19.
+  utter_faq_lung:
+  - text: No - the infection can be caught by anyone. However, people with underlying lung conditions might be more likely to show symptoms of the infection or to have a more severe infection than others. So far, most people that get COVID-19 have a mild viral illness, but some people develop a chest infection/pneumonia. We are not yet certain if people with lung conditions are more likely to get a chest infection after COVID-19, but it is likely since this is the case with other viruses like flu.
+  utter_faq_respiration:
+  - text: Any severe respiratory condition is likely to place you at higher risk of complications, in particular Severe COPD Severe asthma (meaning regularly requiring steroids for exacerbations, or taking a biological treatment of long-term corticosteroids) Bronchiectasis, particularly if you experience frequent chest infections Cystic fibrosis Any other pulmonary condition where you are severely disabled by breathlessness (unable to leave the house due to breathlessness for example) or requiring long-term oxygen treatment Lung cancer if currently active and being treated with chemotherapy or radiotherapy              There are hundreds of different lung conditions and so it is not possible to list them all. Remember that being “high risk” means you have a slightly higher risk of complications of COVID-19 infection than other people, but you are still mostly likely, if you contract the virus, to have a mild illness or no symptoms at all.
+  utter_faq_sick:
+  - text: Follow the advice from your country’s health authorities - this will be slightly different in each country depending on how many cases there are in your country. There are things that everyone should do to limit their risk. If you have a lung condition, the following are important. Avoid contact with anyone who is sick. Ask sick friends or relatives not to visit you and keep distance of at least 2 metres from anyone sick that you encounter in public. Do not touch your mouth, nose or eyes with unwashed hands unless unavoidable. Wash your hands thoroughly after touching surfaces that may be contaminated. Wash your hands with warm water and soap for 20 seconds. Make sure you take all of your regular medications and keep up with your usual treatments to keep your lungs as healthy as possible.
+  utter_faq_isolating:
+  - text: Self-isolating means staying indoors as much as possible and avoiding contact with others. The advice on self-isolation is different in different countries at the moment, but the following are sensible steps that apply to all countries in Europe. If you have symptoms of fever, cough or a chest infection you should self-isolate. If you do not have symptoms, avoid contact with anyone who is sick, even if they “just have a mild cold”. Stay at home as much as possible, including working from home if this is feasible. If you are in an area with a high number of COVID-19 cases, you may be asked to do a more strict isolation.
+  utter_faq_outside:
+  - text: Yes. The virus is caught from people that have the infection and so there is no problem in going outside by yourself. What is important is to avoid contact with anyone who might be ill. Events outside where a large number of people are together have been cancelled around Europe and so you should not be attending any events or meetings where large numbers of people are coming together.
+  utter_faq_respiratory:
+  - text: So far, older age and the presence of underlying conditions - including lung conditions - have been risk factors for death. Nevertheless, it is important to emphasise that most patients, even those with underlying respiratory disease, have had mild infections and have fully recovered.
+  utter_faq_cough:
+  - text: No. There is nothing unique about the symptoms of COVID-19 and this is why most people who are tested for the virus do not have it. Their cough and fever are actually caused by something else. If you have a cough and fever that is typical for you, and you are not unwell enough to need hospital treatment, you should self-isolate at home until the symptoms have resolved.
+
+  utter_faq_pet:
+  - text: There is currently no evidence that humans can catch the disease from common household animals such as cats and dogs.
+  utter_faq_smoke:
+  - text: There is no evidence that COVID-19 can be transmitted through smoke, but passive smoke exposure can still be harmful to people with lung conditions in other ways. It might be worth closing the windows if your neighbours are smoking.
+  utter_faq_old:
+  - text: Most people dying from COVID-19 in the reports from China and other countries have been aged over 80 years and have had advanced heart and lung conditions. They have had a combination of older age and severe pre-existing conditions. The majority of both older people and people with pre-existing conditions have had a mild viral illness and have fully recovered.
+
+  utter_faq_elder:
+  - text: To protect older people and those with underlying health conditions, most European countries have adopted “social distancing” and self-isolation procedures. This means asking people to stay at home more than usual, practice good hand hygiene and keeping their distance in public to reduce transmission.
+  utter_faq_organisation:
+  - text: The European Centre for Disease Prevention and Control is focusing on containing the virus by identifying and testing suspected cases as early as possible, and limiting the impact of the disease by securing preparedness services and personal measures such as hand washing. 
+  utter_faq_air:
+  - text: Studies to date suggest that the virus that causes COVID-19 is mainly transmitted through contact with respiratory droplets rather than through the air.
+  utter_faq_feces:
+  - text: The risk of catching COVID-19 from the feces of an infected person appears to be low. While initial investigations suggest the virus may be present in feces in some cases, spread through this route is not a main feature of the outbreak. The ongoing research on the ways COVID-19 is spread and will continue to share new findings. Because this is a risk, however, it is another reason to clean hands regularly, after using the bathroom and before eating.
+  utter_faq_prevent:
+  - text: Protection measures for everyone Stay aware of the latest information on the COVID-19 outbreak, available on the national,state and local public health authority. Many countries around the world have seen cases of COVID-19 and several have seen outbreaks. Authorities in China and some other countries have succeeded in slowing or stopping their outbreaks. However, the situation is unpredictable so check regularly for the latest news. You can reduce your chances of being infected or spreading COVID19 by taking some simple precautions • Regularly and thoroughly clean your hands with an alcoholbased hand rub or wash them with soap and water. Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands. • Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing. Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease. • Avoid touching eyes, nose and mouth. Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick. • Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately. Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19. • Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority. Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections. • Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid traveling to places – especially if you are an older person or have diabetes, heart or lung disease. Why? You have a higher chance of catching COVID-19 in one of these areas.
+  utter_faq_measures:
+  - text: Self-isolate by staying at home if you begin to feel unwell, even with mild symptoms such as headache, low grade fever (37.3 C or above) and slight runny nose, until you recover. If it is essential for you to have someone bring you supplies or to go out, e.g. to buy food, then wear a mask to avoid infecting other people. Why? Avoiding contact with others and visits to medical facilities will allow these facilities to operate more effectively and help protect you and others from possible COVID-19 and other viruses. o If you develop fever, cough and difficulty breathing, seek medical advice promptly as this may be due to a respiratory infection or other serious condition. Call in advance and tell your provider of any recent travel or contact with travelers. Why? Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also help to prevent possible spread of COVID-19 and other viruses.
+  utter_faq_likely:
+  - text: The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding there. For most people in most locations the risk of catching COVID-19 is still low. However, there are now places around the world (cities or areas) where the disease is spreading. For people living in, or visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce your risk of catching or spreading COVID-19. COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation where you are or intend to go.
+  utter_faq_worry:
+  - text: Illness due to COVID-19 infection is generally mild, especially for children and young adults. However, it can cause serious illness about 1 in every 5 people who catch it need hospital care. It is therefore quite normal for people to worry about how the COVID-19 outbreak will affect them and their loved ones. We can channel our concerns into actions to protect ourselves, our loved ones and our communities. First and foremost among these actions is regular and thorough hand-washing and good respiratory hygiene. Secondly, keep informed and follow the advice of the local health authorities including any restrictions put in place on travel, movement and gatherings.
+  utter_faq_antibiotics:
+  - text: No. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection.
+  utter_faq_medicines:
+  - text: While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence that current medicine can prevent or cure the disease. We does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional medicines. We will continue to provide updated information as soon as clinical findings are available.
+  utter_faq_wear:
+  - text: Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19. Disposable face mask can only be used once. If you are not ill or looking after someone who is ill then you are wasting a mask. There is a world-wide shortage of masks, so We urge people to use masks wisely. We advises rational use of medical masks to avoid unnecessary wastage of precious resources and mis-use of masks The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing.
+  utter_faq_dispose:
+  - text: Remember, a mask should only be used by health workers, care takers, and individuals with respiratory symptoms, such as fever and cough. 2. Before touching the mask, clean hands with an alcohol-based hand rub or soap and water 3. Take the mask and inspect it for tears or holes. 4. Orient which side is the top side (where the metal strip is). 5. Ensure the proper side of the mask faces outwards (the coloured side). 6. Place the mask to your face. Pinch the metal strip or stiff edge of the mask so it moulds to the shape of your nose. 7. Pull down the mask’s bottom so it covers your mouth and your chin. 8. After use, take off the mask; remove the elastic loops from behind the ears while keeping the mask away from your face and clothes, to avoid touching potentially contaminated surfaces of the mask. 9. Discard the mask in a closed bin immediately after use. 10. Perform hand hygiene after touching or discarding the mask – Use alcohol-based hand rub or, if visibly soiled, wash your hands with soap and water.
+  utter_faq_period:
+  - text: The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease. Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days. These estimates will be updated as more data become available.
+  utter_faq_catch:
+  - text: While there has been one instance of a dog being infected in Hong Kong, to date, there is no evidence that a dog, cat or any pet can transmit COVID-19. COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes, or speaks. To protect yourself, clean your hands frequently and thoroughly. We continues to monitor the latest research on this and other COVID19 topics and will update as new findings are available.
+  utter_faq_receive:
+  - text: Yes. The likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19 from a package that has been moved, travelled, and exposed to different conditions and temperature is also low.
+  utter_faq_not:
+  - text: The following measures ARE NOT effective against COVID-2019 and can be harmful • Smoking • Wearing multiple masks • Taking antibiotics (See question 10 "Are there any medicines of therapies that can prevent or cure COVID-19?")
+  utter_faq_show:
+  - text: You can have it and display no symptoms depending on your age, how strong your immune system is and how recently you have been exposed. Because it is extremely contagious, the virus can be transmitted easily - even by individuals without symptoms - which is why it is important to practice preventative measures even if you feel fine.
+  utter_faq_second:
+  - text: Currently it is unknown how long the immunity of COVID-19 patients can last. However, the virus could potentially mutate in such a way as to cause patients to become susceptible again. questions like How accurate were the test results? Was the recovered patient reinfected with the virus, or did they have an infection that simply lasted a long time? Are there variations in immune response among different people? How many different versions of COVID-19 may be spreading around? These questions could help us understand the immune response of the virus.
+  utter_faq_survive:
+  - text: This depends on the surface material and the amount of virus present. A recent study investigated the persistence of corona virus on stainless steel, plastic, cardboard and copper. The authors used an initial virus concentration similar to that found in the respiratory tract of infected people. The virus remained detectable for between 10 hours and three days, with the shortest persistence on copper and the longest on plastic. Another study that looked at the related virus SARS-CoV - the virus responsible for the SARS outbreak in 2003 - found it was detectable for up to nine days. However, just because a virus is detectable does not mean it poses a health risk. So an interesting related question is. How long should we worry about becoming sick from touching a contaminated surface? The answer to this is probably shorter than three to nine days. One reason is that the virus concentration on surfaces declines over time as it dries out, so the longer the time since contamination, the lower the risk. A second reason is that only a portion of the total virus will transfer from the surface to your hand to your mouth or nose. Nevertheless, risks from surface contamination in highly trafficked areas provide additional motivation to wash your hands frequently with soap and water and disinfect surfaces regularly.
+  utter_faq_illness:
+  - text: The diversion of healthcare resources to manage the COVID-19 crisis has significantly affected the ability of many health systems to maintain standards of care for patients with other medical conditions. Hospitals in the worst-affected countries are struggling to keep pace with the number of admissions from the corona virus alone, and have almost zero capacity to cope with other conditions. Even in countries that are not as badly affected, many hospitals have now deferred elective surgeries, redirected any upper respiratory tract infection or pneumonia cases to isolation wards, and cancelled or postponed non-critical outpatient clinic visits. This also means that people are deferring their health checks, including screening tests to pick up cancer incidence. The latter in particular means there will be patients who would otherwise have been identified through routine screening as being in need of urgent medical attention, and these are now missed or delayed – which means the window of opportunity for seeking early or effective treatment may be closed, resulting in morbidity or mortality that could have been avoided. The situation may be compounded when the supply chains for essential medicines are disrupted, a reality that is starting to happen in several countries which are key producers of medical supplies.
+  utter_faq_happen:
+  - text: Over the past 30 years, the number of annual epidemics has nearly tripled. In the past 15 years alone, outbreaks of Zika, MERS-CoV, SARS, cholera, tuberculosis, HIV/AIDS, influenza and Ebola have killed hundreds of thousands of people. We know why this is happening. We live in a world where humans are increasingly connected — not only to each other but also to animals, which are responsible for about three-quarters of new infectious diseases. What’s more, human beings are moving around the planet faster than at any other time in history, giving pathogens endless opportunities to find new hosts, cross borders and evolve into stronger strains than we’ve seen in the past. Climate change is also fuelling the spread of disease, as warmer temperatures disrupt our ecological balance and expand the habitats of mosquitoes and other disease-carrying species. Meanwhile, antimicrobial resistance is undermining some of the gains we have made in controlling outbreaks, as infections become more difficult — and even impossible — to kill. The next pandemic is only a matter of time. And as has become painfully obvious over these past few weeks, we remain dangerously underprepared.
+  utter_faq_spread:
+  - text: DO's are wash your hands with soap and water often – do this for at least 20 seconds use hand sanitiser gel if soap and water are not available wash your hands as soon as you get home cover your mouth and nose with a tissue or your sleeve (not your hands) when you cough or sneeze put used tissues in the bin immediately and wash your hands afterwards. Dont's are do not touch your eyes, nose or mouth if your hands are not clean
+  utter_faq_help:
+  - text: If you need medical help for any reason, do not go to places like a GP surgery, pharmacy or hospital. If you have symptoms of coronavirus (a high temperature or a new, continuous cough), use the 111 coronavirus service. If you need help or advice not related to coronavirus. for health information and advice, use the NHS website or your GP surgery website for urgent medical help, use the NHS 111 online service – only call 111 if you're unable to get help online for life-threatening emergencies, call 999 for an ambulance
+  utter_faq_protecting:
+  - text: You should only leave the house for very limited purposes. shopping for basic necessities, for example food and medicine, which must be as infrequent as possible one form of exercise a day, for example a run, walk, or cycle – alone or with members of your household any medical need, including to donate blood, avoid or escape risk of injury or harm, or to provide care or to help a vulnerable person travelling for work purposes, but only where you cannot work from home.
+  utter_faq_danger:
+  - text: People most at risk from coronavirus are sometimes called "shielded" or "extremely vulnerable" people. This includes people who have had an organ transplant are having certain types of cancer treatment have blood or bone marrow cancer, such as leukaemia have a severe lung condition, such as cystic fibrosis or severe asthma have a condition or are taking medicine that makes them much more likely to get infections are pregnant and have a serious heart condition
+  utter_faq_isolate:
+  - text: Do not leave your home if you have symptoms of coronavirus (COVID-19) or live with someone who does. This is called self-isolation. If you are self-isolating, you must not leave your home for any reason, other than to exercise once a day – but stay at least 2 metres (3 steps) away from other people not go out to buy food or collect medicine – order them by phone or online, or ask someone else to drop them off at your home not have visitors, such as friends and family, in your home You can use your garden, if you have one.
+  utter_faq_self-isolate:
+  - text: If you have symptoms of coronavirus, you'll need to self-isolate for 7 days. After 7 days, if you do not have a high temperature, you do not need to self-isolate if you still have a high temperature, keep self-isolating until your temperature returns to normal You do not need to self-isolate if you just have a cough after 7 days. A cough can last for several weeks after the infection has gone.
+  utter_faq_live:
+  - text: If you live with someone who has symptoms, you'll need to self-isolate for 14 days from the day their symptoms started. This is because it can take 14 days for symptoms to appear. If more than 1 person at home has symptoms, self-isolate for 14 days from the day the first person started having symptoms. If you get symptoms, self-isolate for 7 days from when your symptoms start, even if it means you're self-isolating for longer than 14 days. If you do not get symptoms, you can stop self-isolating after 14 days.
+  utter_faq_reduce:
+  - text: Do's wash your hands with soap and water often, for at least 20 seconds use hand sanitiser gel if soap and water are not available cover your mouth and nose with a tissue or your sleeve (not your hands) when you cough or sneeze put used tissues in the bin straight away and wash your hands afterwards clean objects and surfaces you touch often (like door handles, kettles and phones) using your regular cleaning products clean a shared bathroom each time you use it, for example by wiping the surfaces you have touched Dont's do not share towels, including hand towels and tea towels
+  utter_faq_treat:
+  - text: To help yourself stay well while you're at home rest and sleep drink plenty of water to avoid dehydration – drink enough so your pee is light yellow and clear take paracetamol to lower your temperature
+  utter_faq_ibuprofen:
+  - text: There is currently no strong evidence that ibuprofen can make coronavirus (COVID-19) worse. But until we have more information, take paracetamol to treat the symptoms of coronavirus, unless your doctor has told you paracetamol is not suitable for you. If you are already taking ibuprofen or another non-steroidal anti-inflammatory (NSAID) on the advice of a doctor, do not stop taking it without checking first.
+  utter_faq_leave:
+  - text: You should only leave the house for very limited purposes shopping for basic necessities, for example food and medicine, which must be as infrequent as possible one form of exercise a day, for example a run, walk, or cycle - alone or with members of your household any medical need, including to donate blood, avoid or escape risk of injury or harm, or to provide care or to help a vulnerable person travelling for work purposes, but only where you cannot work from home
+  utter_faq_appointment:
+  - text: You can leave home for medical appointments. GP practices may postpone non-urgent health checks or routine appointments. You should go to the doctor if there is an essential medical need.
+  utter_faq_stay:
+  - text: You may travel for work purposes, but only where you cannot work from home. Certain jobs require people to travel to their place of work – for instance if they operate machinery, work in construction or manufacturing, or are delivering front line services such as train and bus drivers. Employers and employees should discuss their working arrangements, and employers should take every possible step to facilitate their employees working from home, including providing suitable IT and equipment to enable remote working.
+  utter_faq_work:
+  - text: If you cannot work from home then you can still travel to work. This is consistent with the Chief Medical Officer’s advice. Critical workers are those who can still take their children to school or childcare. This critical worker definition does not affect whether or not you can travel to work – if you are not a critical worker, you may still travel to work provided you cannot work from home. Anyone who has symptoms or is in a household where someone has symptoms should not go to work and should self-isolate.
+  utter_faq_essential:
+  - text: The government is not saying only people doing “essential” work can go to work. Anyone who cannot work from home can still go to work. Separately, there is a list of critical workers who can still take their children to school or childcare. Provision has been prioritised for these workers. Every worker – whether critical or not – should work from home if they can but may otherwise travel to work. We have also asked certain businesses where people gather, such as pubs and most shops, to close. Separate guidance has been published on this.
+  utter_faq_friends:
+  - text: We must all stay away from each other to stop spreading the virus, and that means you should not be meeting friends unless you live in the same household. Instead, you could keep in touch with your friends using phone or video calls.
+  utter_faq_relatives:
+  - text: No, you should not be visiting family members who do not live in your home. You should keep in touch with them using phone or video calls. Where your relatives are elderly or vulnerable, you may leave your house to help them, for example by dropping shopping or medication at their door. You can also help them to order online.
+  utter_faq_person:
+  - text: You can only provide support to vulnerable people if you fulfil all of the conditions below you are well and have no symptoms like a cough or high temperature and nobody in your household does you are under 70 you are not pregnant you do not have any long-term health conditions that make you vulnerable to coronavirus When outside the home, you should stay at least two metres away from others wherever possible. We have seen an incredible effort across the country already, and we’re hugely grateful to those who support the vulnerable in their communities by volunteering day-to-day.
+  utter_faq_park:
+  - text: You can still go to the park for outdoor exercise once a day but only alone or with members of your household, not in groups. Communal places within parks such as sports courts, playgrounds and outdoor gyms have been closed to protect everyone’s health. We ask that households use parks responsibly and keep 2 metres apart from others at all times. Unless you are with members of your household, gatherings of more than two people in parks and other public spaces have been banned. The police have the powers to disperse gatherings and issue fines if necessary.
+  utter_faq_house:
+  - text: Homebuyers and renters should, where possible, delay moving to a new house while measures are in place to fight coronavirus. If moving is unavoidable for contractual reasons and the parties are unable to reach an agreement to delay, people must follow advice on staying away from others to minimise the spread of the virus.
+  utter_faq_green:
+  - text: We advise you to stay local and use open spaces near to your home where possible – do not travel unnecessarily. You can still go to the park for outdoor exercise once a day but only by yourself or within your household, not in groups. We ask you to keep 2 metres apart from others outside your household at all times when outdoors.
+  utter_faq_break:
+  - text: We appreciate all the effort people are putting into containing the spread of coronavirus which will help protect our NHS and save lives. However, if you leave your home or gather in public for any reason other than those specified, the police may instruct you to go home, leave an area or disperse instruct you to take steps to stop your children breaking these rules if they have already done so take you home – or arrest you – if you do not follow their instructions or where they deem it necessary issue a fine (fixed penalty notice) of £60, which will be lowered to £30 if paid within 14 days. issue a fine (fixed penalty notice) of £120 for second time offenders, doubling on each further repeat offence Individuals who do not pay their fine could be taken to court, with magistrates able to impose unlimited fines.
+  utter_faq_have:
+  - text: Stay at home guidance Public Health England (PHE) is advising to stay at home for 7 days if you have either a high temperature a new continuous cough.
+  utter_faq_prevention:
+  - text: There are things you can do to help stop viruses like coronavirus spreading which now includes Social distancing Stay at home guidance
+  utter_faq_residence:
+  - text: Yes. We will continue to offer accommodation for any residents who want to remain in London. You should review the Frequently Asked Questions relating to Halls of Residence for the most up to date information. 
+  utter_faq_teaching:
+  - text: Flexible and distance learning Our online, flexible and distance learning programmes continue to be delivered and are supported by staff working remotely. Our students are able to continue with their studies through ongoing, full access to our digital resources. Our students also continue to be supported through our Student Portal and Virtual Learning Environment. Students who study at a Recognised Teaching Centre should also follow the advice from their local teaching centre on classes
+  utter_faq_what:
+  - text: Coronaviruses are a large family of viruses common around the world, which may cause illness in animals or humans. The Novel Coronavirus (or Covid-19) originated in Wuhan City, Hubei Province, China in December 2019, but cases have since been confirmed around the world. Public Health England has assessed the current risk to the public as 'high' and will be working with the World Health Organisation (WHO), the NHS and other international partners constantly to review the situation.
+  utter_faq_social:
+  - text: On Monday 23 March 2020, the government announced strict new social distancing measures, it is the single most important action we can all take in fighting coronavirus by staying at home in order to protect the NHS and save lives. People will only be allowed to leave their homes for the following very limited purposes Shopping for basic necessities as infrequently as possible One form of exercise a day, for example a run, walk, cycle, alone or with members of your household Any medical need to provide care or help a vulnerable person Travelling to and from work, only when absolutely necessary and when it cannot be done from home These restrictions apply to all staff and students, including Undergraduates, Postgraduate Taught students, and Postgraduate Research students, including those living in University accommodation. Unless you have specifically been asked to do so for business critical reasons, please do not access campus facilities.
+  utter_faq_effect:
+  - text: Generally, pregnant women do not appear to be more likely to be seriously unwell than other healthy adults if they develop the new coronavirus. It is expected the large majority of pregnant women will experience only mild or moderate cold/flu like symptoms. More severe symptoms such as pneumonia, seem to be appear to be more common in older people, those with weakened immune systems or long-term conditions. As yet, there is no evidence that pregnant women who get this infection are more at risk of serious complications than any other healthy individuals. If you think you may have symptoms of COVID-19 you should use the NHS 111 online service for information, or NHS 24 if in Scotland. If you develop more severe symptoms or your recovery is delayed, this may be a sign that you are developing a more significant chest infection that requires specialised care. Our advice remains that if you feel your symptoms are worsening or if you are not getting better you should contact your maternity care team or use the NHS 111 online service / NHS 24 for further information and advice.
+  utter_faq_baby:
+  - text: As this is a very new virus we are just beginning to learn about it. There is no evidence to suggest an increased risk of miscarriage. Emerging evidence suggests that transmission from mother to baby during pregnancy or birth (vertical transmission) is probable. There has been a report of a single case in which this appears likely, but reassuringly the baby was discharged from hospital and is well. In all previously reported cases, infection was found at least 30 hours after birth. It is important to emphasise that in all reported cases of newborn babies developing coronavirus very soon after birth, the baby was well. Given current evidence, it is considered unlikely that if you have the virus it would cause problems with the baby’s development, and none have been observed currently. Some babies born to women with symptoms of coronavirus in China have been born prematurely. It is unclear whether coronavirus caused early labour, or whether it was recommended that the baby was born early in order to preserve the mother’s health. The UK is conducting near-real-time surveillance (observation) of all women who develop COVID-19 during pregnancy and their newborn babies, through well-established systems already used by all maternity units. We will update our information if and as soon as there is any change in the evidence.
+  utter_faq_pregnant:
+  - text: Pregnant woman were placed in a vulnerable group by the Chief Medical Officer on 16th March. This means you have been advised to reduce social contact through social distancing measures. Based on the evidence we have so far, pregnant women are still no more likely to contract coronavirus than the general population. What we do know is that pregnancy in a small proportion of women can alter how your body handles severe viral infections. This is something that midwives and obstetricians have known for many years and are used to dealing with. As yet, there is no evidence that pregnant women who get coronavirus are more at risk of serious complications than any other healthy individuals. What has driven the decisions made by officials to place pregnant women in the vulnerable category is caution. We know that some viral infections are worse in pregnant women. At the moment, there’s no evidence that this is the case for coronavirus infection, but the amount of evidence available is still quite limited.
+  utter_faq_travelling:
+  - text: If you are in the UK, you should follow the advice given by the Foreign and Commonwealth Office, which is being regularly updated in line with the evolving situation. All individuals, including pregnant women, should ensure they have adequate insurance arrangements prior to travel. You should also check that your travel insurance will provide cover for birth and care of your newborn baby if you give birth while abroad.
+  utter_faq_natal:
+  - text: Yes. It is really important that you continue to attend your scheduled routine care when you are well. Maternity care is essential, and has been developed over many years to reduce complications in mothers and babies. There is a potential risk of harm to you and your baby if you don’t attend your appointments, even in the context of coronavirus. If you are well, you should be able to attend your antenatal care as normal. If you have symptoms of possible coronavirus infection, you should contact your community midwife to postpone routine visits until after the isolation period is over. At this time, it is particularly important that you help your maternity team take care of you. If you have had an appointment cancelled or delayed, and are not sure of your next contact with your maternity team, please let them know by using the contact numbers given to you at booking. The following practical advice may be helpful. If you have a routine scan, appointment or visit due in the coming days, please contact your maternity unit for advice and a plan. You will still need to attend but the appointment may change due to staffing requirements. Some appointments may be conducted on the telephone or using videoconferencing, provided there is a reasonable expectation that observations, such as blood pressure or other tests are not needed. The recommendation that your bump will be measured from around 26 weeks of pregnancy should be observed by your maternity team unless you are in the recommended 14 day self isolation period. If you are between appointments, please wait to hear from your maternity team. If you are attending more regularly in pregnancy, then your maternity team will be in touch with plans.If you miss an appointment and haven’t heard from your maternity team, please contact them to rearrange the appointment.Whatever your personal situation please consider the followingIf you have any concerns, you will still be able to contact your maternity team but please note they may take longer to get back to you If you have an urgent problem related to your pregnancy but not related to coronavirus, get in touch using the same emergency contact details you already have. Please do not contact this number unless you have an urgent problem If you have symptoms suggestive of coronavirus contact your maternity services and they will arrange the right place and time to come for your visits. You should not attend a routine clinic. You will be asked to keep the number of people with you at appointments to a minimum. This will include being asked to not bring children with you to maternity appointments and on occasions your maternity unit may request that you attend your antenatal appointments alone to aid infection control and help keep staff safe from transmission. There may be a need to reduce the number of antenatal visits. You will be told if this is necessary. Do not reduce your number of visits without agreeing first with your maternity team.
+  utter_faq_impact:
+  - text: The NHS is making arrangements to ensure that women are supported and cared for safely through pregnancy, birth and the period afterwards during this pandemic when there will be extra pressures on healthcare services.Maternity services are absolutely essential and the RCOG is helping units to plan have to staff obstetrics and gynaecology services, to ensure safe care is provided. This includes reducing staff commitments outside maternity units, reducing any non-essential work within Trusts and re-organising staffing in obstetrics and gynaecology services. Maternity units are increasingly providing consultations on the phone or by video link, when this is appropriate, so you do not have to travel unnecessarily to the hospital. However, some in person visits with a midwife are essential and it is important for the wellbeing of you and your baby that you attend these to have routine checks. Routine gynaecology operations are being postponed and, in many units, arrangements are being made for gynaecology doctors to work in the maternity unit.
+  utter_faq_childbirth:
+  - text: We understand this must be a stressful and anxious time if you are pregnant and due to give birth in the coming months. Maternity units everywhere are working around the clock right now to manage additional pressures and facilitate women’s choices. Like all areas of NHS care, maternity services will be affected by the pandemic but units are working to ensure services are provided in a way that is safe, with the levels of staff that are needed and the ability to provide emergency care where necessary. If you have chosen to give birth at home or in a midwife-led unit that is not co-located with an obstetric unit, it is worth noting that these services rely on the availability of ambulance services to allow for rapid transfer to hospital, and the right number of staff to keep you safe. If these are not in place, it is possible that your Trust or Board may not be able to provide these services.
+  utter_faq_labour_birth:
+  - text: Yes, you should be encouraged to have a birth partner present with you during labour and birth. Having a trusted birth partner present throughout labour is known to make a significant difference to the safety and well-being of women in childbirth. If your birth partner has symptoms of coronavirus, they will not be allowed to go into the maternity suite, to safeguard the health of the woman and the maternity staff supporting you Local Trusts may place restrictions on visitors which might mean that partners are not able to attend routine antenatal appointments, or stay with women on antenatal or postnatal wards. However, this should not impact on your birth partner’s presence during your labour and the birth, unless they are unwell.
+  utter_faq_induced:
+  - text: A birth partner without symptoms should be able to attend your induction of labour where that is in a single room (e.g. on the Labour Ward) but not if the induction takes place in a bay on a main ward, as it would not be possible to achieve the necessary social distancing measures. We understand this must be a very worrying and anxious time if you are pregnant and your partner can’t be with you while you are being induced, however it is essential that we limit the number of visitors to hospitals during this time. This guidance is in place to protect other pregnant women and babies, and birth partners themselves. Please be assured that if your partner is unable to be with you on a ward during your induction, this will not impact on your birth partner’s presence during labour and the birth, unless they are unwell. At the point you go into active labour, you will be moved to your own room and your birth partner will be able to join you.
+  utter_faq_operation:
+  - text: We fully support women having their birth partners with them during labour and the birth, unless they are unwell, when an alternative birth partner can attend. Around one in four women in the UK has a caesarean birth. A caesarean may be recommended as a planned (elective) procedure, for medical reasons, or as an emergency, for example if doctors and midwives are concerned that your baby is not coping with labour and needs to be born immediately. Furthermore, around one in five women in the UK has an instrumental birth; some of these may also be recommended to occur in an operating theatre in order to allow the team to modify plans and undertake a caesarean birth if necessary. Most caesareans and instrumental births in theatre are carried out under spinal or epidural anaesthetic, which means you’ll be awake, but the lower part of your body is numb and you cannot feel any pain. In this situation, everything will be done by the clinical staff – midwives, obstetricians and anaesthetists – to keep your birth partner with you. Due to the coronavirus pandemic, staff in the operating theatre will be wearing enhanced personal protective equipment (PPE) to prevent the spread of infection, which will make it more difficult for them to communicate. To enable the clinicians to assist in the birth of your baby safely, it’s really important your birth partner follows the instructions from the maternity team carefully and quickly. Occasionally, a general anaesthetic (where you’re put to sleep) may be used, particularly if your baby needs to be born urgently. During this type of caesarean birth, even under more routine circumstances, for safety reasons it is not recommended for the birth partner to be present during the birth. While the maternity team will do all they can to ensure that your partner is present for the birth, there will be some occasions when there is a need for an urgent emergency birth with epidural or spinal anaesthetic, and it is not possible for your partner to be present. This is because during an emergency operating theatres are more high risk environments in terms of potential spread of coronavirus to everyone who is present. If it is the case that your partner will not be able to be present during the birth, your maternity team will explain this to you and will do everything they can to ensure that your partner can see you and your baby as soon as possible after the birth.
+  utter_faq_advice:
+  - text: We are asking you to follow the guidance below to keep yourself, your family, other families and our staff as safe as possible during the pandemic. During the coronavirus pandemic, all hospitals are restricting visitors but there are exceptions for a birthing partner during active labour and birth. Every woman should be able to have one birth partner stay with her through labour and birth, unless the birth occurs under a general anaesthetic. To help prevent spread of coronavirus to other mothers, their babies, and to key front-line healthcare staff, it is very important that you do not attend the maternity unit if you have any symptoms of coronavirus or have had any in the previous 7 days If you are unwell, protect your family and our NHS staff and stay at home. To prepare for this, women and their partners are being encouraged to think about an alternative birth partner, if required If you are supporting a woman during labour and birth, please be aware of the strict infection control procedures in place to prevent the spread of coronavirus to pregnant women and their babies, as well as other vulnerable people within the hospital and the maternity staff.
+  utter_faq_tested:
+  - text: The process for diagnosing coronavirus infection is changing rapidly. At the current time, only people with severe symptoms who need at least overnight admission to hospital will be tested. If you do require a test, you will be tested in the same way as anyone else, regardless of the fact that you are pregnant. Currently, the test involves swabs being taken from your mouth and nose. You may also be asked to cough up sputum, a mixture of saliva and mucus.
+  utter_faq_positive:
+  - text: If you test positive for coronavirus, you should contact your midwife or antenatal team to make them aware of your diagnosis. If you have no symptoms, or mild symptoms, you will be advised to recover at home. If you have more severe symptoms, you might be treated in hospital.
+  utter_faq_contact:
+  - text: You may be advised to self-isolate because You have symptoms of coronavirus, such as a high temperature or new, continuous cough.You have tested positive for coronavirus and you’ve been advised to recover at home
+  utter_faq_should:
+  - text: Pregnant women who have been advised to self-isolate should stay indoors and avoid contact with others for 7 days. If you live with other people, they should stay at home for at least 14 days, to avoid spreading the infection outside the home. The NHS guidance on self-isolation currently recommends people should Not go to school, work, NHS settings or public areas Not use public transport Stay at home and not allow visitors Ventilate the rooms where they are by opening a window Separate themselves from other members of their household as far as possible, using their own towels, crockery and utensils and eating at different times Use friends, family or delivery services to run errands, but advise them to leave items outside. You may wish to consider online fitness routines to keep active, such as pregnancy yoga or Pilates.
+  utter_faq_care:
+  - text: If you have confirmed coronavirus infection, as a precautionary approach, an ultrasound scan will be arranged at least two weeks after your recovery, to check that your baby is well. If you have recovered from coronavirus and tested negative for the virus before you go into labour, where and how you give birth will not be affected by your previous illness. Visitor numbers may be restricted to promote recommended social distancing but your birth partner will be able to be with you, provided they are not unwell.
+  utter_faq_unwell:
+  - text: Pregnant women who are self-isolating are advised not to attend maternity units or A&E unless in need of urgent pregnancy or medical care. If you have concerns about the wellbeing of yourself or your unborn baby during your self-isolation period, contact your midwife or, out-of-hours, your maternity team. They will provide further advice, including whether you need to attend hospital. If you are advised to go to the maternity unit or hospital, pregnant women are asked to travel by private transport, or arrange hospital transport, and alert the maternity unit reception once on the premises, before going into the hospital.
+  utter_faq_birth:
+  - text: As a precautionary approach, pregnant women with suspected or confirmed coronavirus when they go into labour, are being advised to go to obstetric unit for birth, where the baby can be monitored using continuous electronic fetal monitoring, and your oxygen levels can be monitored hourly. The continuous fetal monitoring is to check how your baby is coping with labour. As continuous fetal monitoring can only take place in an obstetric unit, where doctors and midwives are present, it is not currently recommended that you give birth at home or in a midwife led unit, where there would not be doctor present and where this monitoring would not be possible. We will keep this advice continually updated as new evidence emerges. Maternity units everywhere are working around the clock right now to manage additional pressures and facilitate women’s choices to the best of their abilities.
+  utter_faq_affect:
+  - text: There is currently no evidence to suggest you cannot give birth vaginally or that you would be safer having a caesarean birth if you have suspected or confirmed coronavirus, so your birth choices should be respected and followed as closely as possible based on your wishes. However, if your breathing (respiratory condition) suggests that your baby needs to be born urgently, a caesarean birth may be recommended. It is not recommended that you give birth in a birthing pool in hospital if you have suspected or confirmed coronavirus, as the virus can sometimes be found in faeces. This means it could contaminate the water, causing infection to pass to the baby. It may also be more difficult for healthcare staff to use adequate protection equipment during a water birth. There is no evidence that women with suspected or confirmed coronavirus cannot have an epidural or a spinal block. In our previous version of the guidance it was suggested that the use of Entonox (gas and air) may increase aerosolisation and spread of the virus, but a review of the evidence suggests there is no evidence that Entonox is an aerosol-prone procedure, so there is no reason you cannot use this in labour.
+  utter_faq_labour:
+  - text: If you go into labour, you should call your maternity unit for advice, and inform them that you have suspected or confirmed coronavirus infection. If you have mild symptoms, you will be encouraged to remain at home (self-isolating) in early labour, as usual. Your maternity team have been advised on ways to ensure that you and your baby receive safe, quality care, respecting your birth choices as closely as possible. When you and your maternity team decide you need to attend the maternity unit, general recommendations about hospital attendance will apply  You will be advised to attend hospital via private transport where possible, or call 111/999 for advice, as appropriate You will be met at the maternity unit entrance and provided with a surgical face mask, which will need to stay on until you are isolated in a suitable room Coronavirus testing will be arranged Your birth partner(s) will be able to stay with you throughout, but visitors should be kept to a minimum
+  utter_faq_pass:
+  - text: As this is a new virus, there is limited evidence about caring for women with coronavirus infection in women when they have just given birth. A small number of babies have been diagnosed with coronavirus shortly after birth, so there is a chance that infection may have occurred in the womb, but it is not certain whether transmission was before or soon after birth. Your maternity team will maintain strict infection control measures at the time of your birth and closely monitor your baby.
+  utter_faq_baby_test:
+  - text: If you have confirmed or suspected coronavirus when the baby is born, doctors who specialise in the care of newborn babies (neonatal doctors) will examine your baby and advise you about their care, including whether they need testing.
+  utter_faq_name:
+  - text: On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”. There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans. The name of this disease was selected following the World Health Organization (WHO) best practicesexternal icon for naming new human infectious diseases.
+  utter_faq_blame:
+  - text: People in the U.S. may be worried or anxious about friends and relatives who are living in or visiting areas where COVID-19 is spreading. Some people are worried about getting the disease from these people. Fear and anxiety can lead to social stigma, for example, toward people who live in certain parts of the world, people who have traveled internationally, people who were in quarantine, or healthcare professionals. Stigma is discrimination against an identifiable group of people, a place, or a nation. Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to blame someone, fears about disease and death, and gossip that spreads rumors and myths. Stigma hurts everyone by creating more fear or anger toward ordinary people instead of focusing on the disease that is causing the problem.
+  utter_faq_stigma:
+  - text: People can fight stigma by providing social support in situations where you notice this is occurring. Stigma affects the emotional or mental health of stigmatized groups and the communities they live in. Stopping stigma is important to making communities and community members resilient. See resources on mental health and coping during COVID-19. Everyone can help stop stigma related to COVID-19 by knowing the facts and sharing them with others in your community.
+  utter_faq_sources:
+  - text: COVID-19 is caused by a coronavirus called SARS-CoV-2. Coronaviruses are a large family of viruses that are common in people and may different species of animals, including camels, cattle, cats, and bats.  Rarely, animal coronaviruses can infect people and then spread between people. This occurred with MERS-CoV and SARS-CoV, and now with the virus that causes COVID-19. More information about the source and spread of COVID-19 is available on the Situation Summary Source and Spread of the Virus.
+  utter_faq_how:
+  - text: The virus that causes COVID-19 is thought to spread mainly from person to person, mainly through respiratory droplets produced when an infected person coughs or sneezes. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Spread is more likely when people are in close contact with one another (within about 6 feet). COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in many affected geographic areas. Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected.
+  utter_faq_rise:
+  - text: The number of cases of COVID-19 being reported in the United States is rising due to increased laboratory testing and reporting across the country. The growing number of cases in part reflects the rapid spread of COVID-19 as many U.S. states and territories experience community spread. More detailed and accurate data will allow us to better understand and track the size and scope of the outbreak and strengthen prevention and response efforts.
+  utter_faq_someone:
+  - text: The virus that causes COVID-19 is spreading from person-to-person. People are thought to be most contagious when they are symptomatic (the sickest). That is why CDC recommends that these patients be isolated either in the hospital or at home (depending on how sick they are) until they are better and no longer pose a risk of infecting others. More recently the virus has also been detected in asymptomatic persons. How long someone is actively sick can vary so the decision on when to release someone from isolation is made using a test-based or non-test-based strategy (i.e. time since illness started and time since recovery) in consultation with state and local public health officials. The decision involves considering the specifics of each situation, including disease severity, illness signs and symptoms, and the results of laboratory testing for that patient.  Learn more about CDC’s guidance on when to release someone from isolation and discharge hospitalized patients with COVID-19. For information on when someone who has been sick with COVID-19 is able to stop home isolation see Interim Guidance for Discontinuation of In-Home Isolation for Patients with COVID-19. Someone who has been released from isolation is not considered to pose a risk of infection to others.
+  utter_faq_restaurant:
+  - text: Coronaviruses are generally thought to be spread from person to person through respiratory droplets. Currently, there is no evidence to support transmission of COVID-19 associated with food. Before preparing or eating food it is important to always wash your hands with soap and water for at least 20 seconds for general food safety. Throughout the day use a tissue to cover your coughing or sneezing, and wash your hands after blowing your nose, coughing or sneezing, or going to the bathroom. It may be possible that a person can get COVID-19 by touching a surface or object, like a packaging container, that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads. In general, because of poor survivability of these coronaviruses on surfaces, there is likely very low risk of spread from food products or packaging.
+  utter_faq_sickness:
+  - text: Based on information about this novel coronavirus thus far, it seems unlikely that COVID-19 can be transmitted through food – additional investigation is needed.
+  utter_faq_warm:
+  - text: It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.
+  utter_faq_community:
+  - text: Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected.
+  utter_faq_temperature:
+  - text: Generally coronaviruses survive for shorter periods at higher temperatures and higher humidity than in cooler or dryer environments. However, we don’t have direct data for this virus, nor do we have direct data for a temperature-based cutoff for inactivation at this point. The necessary temperature would also be based on the materials of the surface, the environment, etc. Regardless of temperature please follow CDC’s guidance for cleaning and disinfection.
+  utter_faq_mosquitoes:
+  - text: At this time, CDC has no data to suggest that this new coronavirus or other similar coronaviruses are spread by mosquitoes or ticks. The main way that COVID-19 spreads is from person to person. See How Coronavirus Spreads for more information.
+  utter_faq_protection:
+  - text: There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19). The best way to prevent illness is to avoid being exposed to this virus. The virus is thought to spread mainly from person-to-person. Between people who are in close contact with one another (within about 6 feet). Through respiratory droplets produced when an infected person coughs, sneezes or talks. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.
+  utter_faq_close:
+  - text: If you are sick with COVID-19 or suspect you are infected with the virus that causes COVID-19, you should take steps to help prevent the disease from spreading to people in your home and community. If you think you have been exposed to COVID-19 and develop a fever and symptoms, such as cough or difficulty breathing, call your healthcare provider for medical advice.
+  utter_faq_face:
+  - text: In light of new data about how COVID-19 spreads, along with evidence of widespread COVID-19 illness in communities across the country, CDC recommends that people wear a cloth face covering to cover their nose and mouth in the community setting. This is an additional public health measure people should take to reduce the spread of COVID-19 in addition to (not instead of) social distancing, frequent hand cleaning and other everyday preventive actions. A cloth face covering is not intended to protect the wearer, but may prevent the spread of virus from the wearer to others. This would be especially important in the event that someone is infected but does not have symptoms. A cloth face covering should be worn whenever people must go into public settings (grocery stores, for example). Medical masks and N-95 respirators are reserved for healthcare workers and other first responders, as recommended by current CDC guidance.
+  utter_faq_shipping:
+  - text: There is still a lot that is unknown about COVID-19 and how it spreads. This coronaviruses is thought to be spread most often by respiratory droplets. Although the virus can survive for a short period on some surfaces, it is unlikely to be spread from products or packaging that are shipped over a period of days or weeks at ambient temperatures. Currently there is no evidence to support transmission of COVID-19 associated with imported goods and there have not been any cases of COVID-19 in the United States associated with imported goods. Information will be provided on the Coronavirus Disease 2019 (COVID-19) website as it becomes available.
+  utter_faq_donate:
+  - text: caring for patients. The need for donated blood is constant, and blood centers are open and in urgent need of donations. CDC encourages people who are well to continue to donate blood if they are able, even if they are practicing social distancing because of COVID-19. CDC is supporting blood centers by providing recommendations that will keep donors and staff safe. Examples of these recommendations include spacing donor chairs 6 feet apart, thoroughly adhering to environmental cleaning practices, and encouraging donors to make donation appointments ahead of time.
+  utter_faq_major_risk:
+  - text: Based on available evidence, children do not appear to be at higher risk for COVID-19 than adults. While some children and infants have been sick with COVID-19, adults make up most of the known cases to date. You can learn more about who is at higher risk for severe illness from COVID-19 at People who are at higher risk for severe illness.
+  utter_faq_infection:
+  - text: You can encourage your child to help stop the spread of COVID-19 by teaching them to do the same things everyone should do to stay healthy. Avoid close contact with people who are sick. Stay home when you are sick, except to get medical care. Cover your coughs and sneezes with a tissue and throw the tissue in the trash. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water if hands are visibly dirty. Clean and disinfect frequently touched surfaces and objects (e.g., tables, countertops, light switches, doorknobs, and cabinet handles). L under items, including washable plush toys, as appropriate and in accordance with the manufacturer’s instructions. If possible, launder items using the warmest appropriate water setting for the items and dry items completely. Dirty laundry from an ill person can be washed with other people’s items.
+  utter_faq_adults:
+  - text: No. The symptoms of COVID-19 are similar in children and adults. However, children with confirmed COVID-19 have generally presented with mild symptoms. Reported symptoms in children include cold-like symptoms, such as fever, runny nose, and cough. Vomiting and diarrhea have also been reported. It’s not known yet whether some children may be at higher risk for severe illness, for example, children with underlying medical conditions and special healthcare needs. There is much more to be learned about how the disease impacts children.
+  utter_faq_prepare:
+  - text: Outbreaks can be stressful for adults and children. Talk with your children about the outbreak, try to stay calm, and reassure them that they are safe. If appropriate, explain to them that most illness from COVID-19 seems to be mild. Children respond differently to stressful situations than adults. CDC offers resources to help talk with children about COVID-19.
+  utter_faq_family_prepare:
+  - text: Create a household plan of action to help protect your health and the health of those you care about in the event of an outbreak of COVID-19 in your community Talk with the people who need to be included in your plan, and discuss what to do if a COVID-19 outbreak occurs in your community. Plan ways to care for those who might be at greater risk for serious complications, particularly older adults and those with severe chronic medical conditions like heart, lung or kidney disease. Make sure they have access to several weeks of medications and supplies in case you need to stay home for prolonged periods of time. Get to know your neighbors and find out if your neighborhood has a website or social media page to stay connected. Create a list of local organizations that you and your household can contact in the event you need access to information, healthcare services, support, and resources. Create an emergency contact list of family, friends, neighbors, carpool drivers, health care providers, teachers, employers, the local public health department, and other community resources.
+  utter_faq_reduce_risk:
+  - text: Practice everyday preventive actions to help reduce your risk of getting sick and remind everyone in your home to do the same. These actions are especially important for older adults and people who have severe chronic medical conditions Avoid close contact with people who are sick. Stay home when you are sick, except to get medical care. Cover your coughs and sneezes with a tissue and throw the tissue in the trash. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water if hands are visibly dirty. Clean and disinfect frequently touched surfaces and objects (e.g., tables, countertops, light switches, doorknobs, and cabinet handles). Launder items, including washable plush toys, as appropriate and in accordance with the manufacturer’s instructions. If possible, launder items using the warmest appropriate water setting for the items and dry items completely. Dirty laundry from an ill person can be washed with other people’s items.
+  utter_faq_house_sick:
+  - text: Most people who get COVID-19 will be able to recover at home. CDC has directions for people who are recovering at home and their caregivers, including Stay home when you are sick, except to get medical care. Use a separate room and bathroom for sick household members (if possible). Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water if hands are visibly dirty. Provide your sick household member with clean disposable facemasks to wear at home, if available, to help prevent spreading COVID-19 to others. Clean the sick room and bathroom, as needed, to avoid unnecessary contact with the sick person. Avoid sharing personal items like utensils, food, and drinks.
+  utter_faq_prepare_at_work:
+  - text: Plan for potential changes at your workplace. Talk to your employer about their emergency operations plan, including sick-leave policies and telework options.
+  utter_faq_sanitizer:
+  - text: Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.
+  utter_faq_clean:
+  - text: Clean and disinfect frequently touched surfaces such as tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.  If surfaces are dirty, clean them using detergent or soap and water prior to disinfection. To disinfect, most common EPA-registered household disinfectants will work.
+  utter_faq_home_sanitizer:
+  - text: CDC recommends handwashing with soap and water for at least 20 seconds or, using alcohol-based hand sanitizer with at least 60% alcohol when soap and water are not available. These actions are part of everyday preventive actions individuals can take to slow the spread of respiratory diseases like COVID-19. When washing hands, you can use plain soap or antibacterial soap. Plain soap is as effective as antibacterial soap at removing germs. If soap and water are not readily available, you can use an FDA-approved alcohol-based hand sanitizer that contains at least 60% alcohol. You can tell if the sanitizer contains at least 60% alcohol by looking at the product label. CDC does not encourage the production and use of homemade hand sanitizer products because of concerns over the correct use of the ingredientsexternal icon and the need to work under sterile conditions to make the product. Local industries that are looking into producing hand sanitizer to fill in for commercial shortages can refer to the World Health Organization guidancepdf iconexternal icon. Organizations should revert to the use of commercially produced, FDA-approved product once such supplies again become available. To be effective against killing some types of germs, hand sanitizers need to have a strength of at least 60% alcohol and be used when hands are not visibly dirty or greasy. Do not rely on “Do It Yourself” or “DIY” recipes based solely on essential oils or formulated without correct compounding practices. Do not use hand sanitizer to disinfect frequently touched surfaces and objects. See CDC’s information for cleaning and sanitizing your home.
+  utter_faq_complications:
+  - text: Current symptoms reported for patients with COVID-19 have included mild to severe respiratory illness with fever1, cough, and difficulty breathing. Reported illnesses have ranged from mild symptoms to severe illness and death for confirmed coronavirus disease 2019 (COVID-19) cases. These symptoms may appear 2-14 days after exposure (based on the incubation period of MERS-CoV viruses). Fever, Cough, Shortness of breath
+  utter_faq_most_risk:
+  - text: COVID-19 is a new disease and there is limited information regarding risk factors for severe disease. Based on currently available information and clinical expertise, older adults and people of any age who have serious underlying medical conditions might be at higher risk for severe illness from COVID-19. Based on what we know now, those at high-risk for severe illness from COVID-19 are People aged 65 years and older People who live in a nursing home or long-term care facility. People of all ages with underlying medical conditions, particularly if not well controlled, including People with chronic lung disease or moderate to severe asthma, People who have serious heart conditions People who are immunocompromised Many conditions can cause a person to be immunocompromised, including cancer treatment, smoking, bone marrow or organ transplantation, immune deficiencies, poorly controlled HIV or AIDS, and prolonged use of corticosteroids and other immune weakening medications People with severe obesity (body mass index [BMI] ?40) People with diabetes People with chronic kidney disease undergoing dialysis People with liver disease
+  utter_faq_ill:
+  - text: If you are at higher risk of getting very sick from COVID-19, you should Stock up on supplies Take everyday precautions to keep space between yourself and others When you go out in public, keep away from others who are sick Limit close contact and wash your hands often Avoid crowds, cruise travel, and non-essential travel. If there is an outbreak in your community, stay home as much as possible. Watch for symptoms and emergency signs. If you get sick, stay home and call your doctor.
+  utter_faq_pets:
+  - text: At this time, there is no evidence that companion animals, including pets, can spread COVID-19 to people or that they might be a source of infection in the United States. To date, CDC has not received any reports of pets becoming sick with COVID-19 in the United States. Pets have other types of coronaviruses that can make them sick, like canine and feline coronaviruses. These other coronaviruses cannot infect people and are not related to the current COVID-19 outbreak. However, since animals can spread other diseases to people, it’s always a good idea to practice healthy habits around pets and other animals, such as washing your hands and maintaining good hygiene. For more information on the many benefits of pet ownership, as well as staying safe and healthy around animals including pets, livestock, and wildlife
+  utter_faq_prevent_ill:
+  - text: The best way to prevent illness is to avoid being exposed to the virus. CDC recommends everyday preventive actions to help prevent the spread of respiratory diseases. Learn how to protect yourself and others from coronavirus.
+  utter_faq_mortality:
+  - text: The actual death toll from COVID-19 is likely to be higher than the number of confirmed deaths – this is due to limited testing and problems in the attribution of the cause of death. The difference between reported confirmed deaths and actual deaths varies by country. How COVID-19 deaths are recorded may differ between countries (e.g., some countries may only count hospital deaths, whilst others also include deaths in homes). The death figures on a given date do not necessarily show the number of new deaths on that day, but the deaths reported on that day. Since reporting can vary significantly from day to day – irrespectively of any actual variation of deaths – it is helpful to view the seven-day rolling average of the daily figures as we do in the chart here.
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_thanks
+- utter_goodbye
+- utter_how_can_i_help
+- utter_ask_location
+- utter_address
+- utter_ask_username
+- utter_submit
+- utter_out_of_scope
+- utter_smalltalk_human
+- utter_faq_distancing
+- utter_faq_supplies
+- utter_faq_whatisit
+- utter_ask_email
+- utter_ask_mobilenumber
+- action_set_username
+- action_facility_search
+- utter_subscribed
+- utter_faq_incubation
+- utter_faq_risk
+- utter_faq_SARS
+- utter_faq_virus
+- utter_faq_source
+- utter_faq_transmit
+- utter_faq_vaccine
+- utter_faq_treatment
+- utter_faq_protect
+- utter_faq_workers
+- utter_faq_WHO
+- utter_faq_child
+- utter_faq_family
+- utter_faq_test
+- utter_faq_information
+- utter_faq_SARA_CoV_2
+- utter_faq_seasonal
+- utter_faq_transmission
+- utter_faq_infectitious
+- utter_faq_severe
+- utter_faq_life
+- utter_faq_pregnancy
+- utter_faq_testing
+- utter_faq_centre
+- utter_faq_allergy
+- utter_faq_isolation
+- utter_faq_avoid
+- utter_faq_avoiding
+- utter_faq_distance
+- utter_faq_mask
+- utter_faq_time
+- utter_faq_influenza
+- utter_faq_situation
+- utter_faq_preparation
+- utter_faq_condition
+- utter_faq_infected
+- utter_faq_outbreak
+- utter_faq_schools
+- utter_faq_travel
+- utter_faq_precautions
+- utter_faq_plane
+- utter_faq_package
+- utter_faq_food
+- utter_faq_animal
+- utter_faq_lung
+- utter_faq_respiration
+- utter_faq_sick
+- utter_faq_isolating
+- utter_faq_outside
+- utter_faq_respiratory
+- utter_faq_cough
+- utter_faq_pet
+- utter_faq_smoke
+- utter_faq_old
+- utter_faq_vulnerable
+- utter_faq_elder
+- utter_faq_organisation
+- utter_faq_air
+- utter_faq_feces
+- utter_faq_prevent
+- utter_faq_measures
+- utter_faq_likely
+- utter_faq_worry
+- utter_faq_antibiotics
+- utter_faq_medicines
+- utter_faq_wear
+- utter_faq_dispose
+- utter_faq_period
+- utter_faq_catch
+- utter_faq_receive
+- utter_faq_not
+- utter_faq_show
+- utter_faq_second
+- utter_faq_survive
+- utter_faq_illness
+- utter_faq_happen
+- utter_faq_spread
+- utter_faq_help
+- utter_faq_protecting
+- utter_faq_danger
+- utter_faq_symptoms
+- utter_faq_isolate
+- utter_faq_Self-isolate
+- utter_faq_live
+- utter_faq_reduce
+- utter_faq_treat
+- utter_faq_ibuprofen
+- utter_faq_leave
+- utter_faq_appointment
+- utter_faq_stay
+- utter_faq_work
+- utter_faq_essential
+- utter_faq_friends
+- utter_faq_relatives
+- utter_faq_person
+- utter_faq_park
+- utter_faq_house
+- utter_faq_green
+- utter_faq_break
+- utter_faq_have
+- utter_faq_prevention
+- utter_faq_residence
+- utter_faq_teaching
+- utter_faq_what
+- utter_faq_social
+- utter_faq_effect
+- utter_faq_baby
+- utter_faq_pregnant
+- utter_faq_travelling
+- utter_faq_natal
+- utter_faq_fever
+- utter_faq_impact
+- utter_faq_childbirth
+- utter_faq_labour_birth
+- utter_faq_induced
+- utter_faq_operation
+- utter_faq_advice
+- utter_faq_tested
+- utter_faq_positive
+- utter_faq_contact
+- utter_faq_should
+- utter_faq_care
+- utter_faq_unwell
+- utter_faq_birth
+- utter_faq_affect
+- utter_faq_labour
+- utter_faq_pass
+- utter_faq_baby_test
+- utter_faq_origin
+- utter_faq_name
+- utter_faq_blame
+- utter_faq_stigma
+- utter_faq_sources
+- utter_faq_how
+- utter_faq_rise
+- utter_faq_someone
+- utter_faq_restaurant
+- utter_faq_sickness
+- utter_faq_warm
+- utter_faq_community
+- utter_faq_temperature
+- utter_faq_mosquitoes
+- utter_faq_protection
+- utter_faq_close
+- utter_faq_face
+- utter_faq_shipping
+- utter_faq_donate
+- utter_faq_major_risk
+- utter_faq_infection
+- utter_faq_adults
+- utter_faq_children
+- utter_faq_prepare
+- utter_faq_family_prepare
+- utter_faq_reduce_risk
+- utter_faq_house_sick
+- utter_faq_prepare_at_work
+- utter_faq_sanitizer
+- utter_faq_clean
+- utter_faq_home_sanitizer
+- utter_faq_complications
+- utter_faq_most_risk
+- utter_faq_ill
+- utter_faq_pets
+- utter_faq_prevent_ill
+- utter_faq_mortality
+
+forms:
+  newsletter_form:
+    email:
+    - type: from_text

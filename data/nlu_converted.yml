@@ -1,0 +1,1980 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - heyyyy
+    - hello
+    - hellooo
+    - hi
+    - hiiii
+    - good morning
+    - good evening
+    - hey there
+    - hello bot
+    - morning
+    - hmm
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - thanks a lot
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
+- intent: goodbye
+  examples: |
+    - bye! Stay home
+    - byeee
+    - goodbye
+    - thanks
+    - thankssss
+    - thank you
+    - thanks for help
+    - nice
+    - see you around
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - very good
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I'm good
+- intent: mood_unhappy
+  examples: |
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+- intent: out_of_scope
+  examples: |
+    - please help with my ice cream it's dripping
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - i want a non dripping ice cream
+    - someone call the police i think the bot died
+    - show me a picture of a chicken
+    - neither
+    - I want french cuisine
+    - i am hungry
+    - restaurant
+    - can i be shown a gluten free restaurant
+    - i don't care!!!!
+    - i do not care how are you
+    - again?
+    - oh wait i gave you my work email address can i change it?
+    - hang on let me find it
+    - stop it, i do not care!!!
+    - how come?
+    - I changed my mind
+    - what?
+    - did i break you
+    - that link doesn't work!
+    - you already have that
+    - this is a really frustrating experience
+    - no stop
+    - give me food
+    - i want food
+    - Can I ask you questions first?
+    - is it a wasteland full of broken robot parts?
+    - can we keep chatting?
+    - talk to me
+    - who is your favourite robot?
+    - can you help me to build a bot
+    - a wood chuck can't chuck any kind of wood
+    - a wood chuck can't chuck wood
+    - are you wearing anything?
+    - can i arrange a taxi?
+    - can i book a taxi?
+    - can i order a pizza?
+    - give quiche a chance
+    - how much wood could a wood chuck chuck if a wood chuck would chuck wood?
+    - i am heavy weapons guy and this is my weapon
+    - i know kung-fu
+    - i need a taxi
+    - i want a pepperoni pizza
+    - i want to order a pizza
+    - i'd like a pizza please
+    - i'm all out of bubblegum
+    - i'm asking you to marry me
+    - it's an albany expression
+    - marry me
+    - now i have a machine gun ho-ho-ho!
+    - please marry me
+    - tell me what you're wearing?
+    - trial by stone!
+    - what are you wearing?
+    - will you marry me?
+    - you come to me on the day of my daughter's wedding
+    - you don't win friends with salad
+    - you're going to need a bigger boat
+    - fuck you
+    - oh my god
+- intent: smalltalk_human
+  examples: |
+    - am a talking with a bot?
+    - am i speaking to a bot?
+    - am i talking to a bot?
+    - am i talking to a human?
+    - am i talking to a person
+    - am i talking to a real person?
+    - am i talking to a robot?
+    - are you a human?
+    - are you a real person?
+    - are you real?
+    - can i contact a human being?
+    - i don't want to speak with a bot
+    - i don't want to talk
+    - i don't want to talk to a chatbot
+    - i don't want to talk with a chatbot
+    - i'd like to speak to a person
+    - is this a person?
+    - is this a real person or a bot?
+    - who am i talking to?
+    - you real?
+- intent: faq_distancing
+  examples: |
+    - am i going into quarantine?
+    - are there guidelines for how to self-isolate?
+    - can i go for a walk?
+    - can i still go outside?
+    - can i still travel to work?
+    - can i walk somewhere?
+    - do i have to avoid going outside?
+    - do i have to avoid people?
+    - do i have to isolate?
+    - do i have to stay away from people?
+    - do i have to stay inside?
+    - for how long do i need to stay at home?
+    - for what reasons can i still go outside?
+    - for what reasons can i still travel?
+    - how do i avoid people?
+    - how do i self isolate
+    - how do i socially distance?
+    - how does quarantine work?
+    - how does social distancing work?
+    - how far apart should i stay for social distancing?
+    - how long do i have to self-isolate for?
+    - how long do i have to stay inside
+    - how will social distancing help?
+    - should i stay away from people?
+    - what amount of time do i have to self-isolate for?
+    - what are the guidelines for a lockdown?
+    - what are the guidelines for isolating?
+    - what are the guidelines for social-distancing
+    - what counts as essential travel?
+    - what do i have to self-isolate for?
+    - what does social distancing mean?
+    - what essential travel can i still do?
+    - what if i want to go for a walk
+    - what is essential travel?
+    - what is quarantine?
+    - what is self-isolation
+    - what is social distancing
+    - when should i stay in isolation?
+    - who doesn't need to stay at home?
+    - who needs to stay at home?
+    - why do i have to avoid going outside?
+    - why do i have to avoid people?
+    - why do i have to stay inside
+    - why does social distancing help?
+    - why should i isolate
+    - why should i quarantine myself?
+    - why should most people isolate?
+    - will quarantine work?
+- intent: faq_symptoms
+  examples: |
+    - am i going to die?
+    - am i going to need hospital treatment?
+    - are aches a symptom?
+    - are the symptoms serious?
+    - can i still have it but have no symptoms?
+    - can people die from contacting covid-19?
+    - can people die from contracting covid-19?
+    - can people die from coronavirus?
+    - can people die from this?
+    - can there be complications from covid-19 symptoms?
+    - can you be infected and not show any symptoms?
+    - can you tell me what the symptoms are?
+    - could i be carrying coronavirus if i don't have symptoms?
+    - does everyone have symptoms?
+    - how badly should i be coughing
+    - how can i identify the symptoms of corona?
+    - how can i tell if i have corona virus?
+    - how do i know i have covid-19?
+    - how do i know i might be a carrier?
+    - how do i know i might have it?
+    - how do i know if i have a high temperature?
+    - how do i know if i have it?
+    - how do i know if i need hospital treatment?
+    - how do i know if i'm a carrier of covid-19?
+    - how do i know if i've caught coronavirus?
+    - how do i know if i've caught it?
+    - how high does my fever have to be for me to go to hospital?
+    - how high is a fever?
+    - how is your body affected by corona?
+    - how long do i have to be sick for before i can go to a clinic?
+    - how long should i have a fever for?
+    - how severe do my symptoms have to be before i go to hospital?
+    - how would my body feel if i caught the virus?
+    - i have a fever, do i have corona?
+    - i'm coughing, what should i do?
+    - is a symptom?
+    - is coughing a symptom of the disease?
+    - is joint pain a symptom?
+    - should i go to a health centre if i have symptoms?
+    - what are the signs and symptoms?
+    - what are the signs of corona?
+    - what are the signs of covid-19
+    - what are the signs?
+    - what are the symptoms?
+    - what counts as a high temperature?
+    - what do aches and pains mean?"
+    - what do the symptoms look like?
+    - what does a high temperature feel like?
+    - what does asymptomatic mean?
+    - what does dry cough mean?
+    - what does having corona feel like?
+    - what does having corona virus feel like?
+    - what does having the virus feel like?
+    - what does it mean if i'm coughing?
+    - what does it mean to be asymptomatic?
+    - what does persistent cough mean?
+    - what does the virus do to your body?
+    - what does this virus do to the body
+    - what is a dry cough?
+    - what is a fever?
+    - what is a high temperatures?
+    - what is an asymptomatic carrier?
+    - what is different about a dry cough?
+    - what should i do if i think i have it?
+    - what should i do if i think i might have corona virus?
+    - what signs of covid-19 should i look for?
+    - what temperature is a fever?
+    - when do i need to go to a clinic?
+    - when is a cough persistent?
+    - when should i go to hospital?
+    - when should i go to the emergency room?
+- intent: faq_vaccine
+  examples: |
+    - am i immune once i've been vaccinated
+    - are inoculations available?
+    - are they researching vaccines?
+    - are they working on vaccines?
+    - can covid be cured?
+    - can i be vaccinated?
+    - can inoculation protect you from coronavirus?
+    - can researching make a vaccine?
+    - can vaccines protect you from corona?
+    - can you be inoculated against the virus?
+    - can you be inoculated?
+    - can you be vaccinated to protect you from covid-19?
+    - can you be vaccinated?
+    - can you get vaccinated?
+    - how can i be vaccinated?
+    - how does vaccine research work
+    - how long will it take to develop a vaccine?
+    - how long will it take to develop inoculation?
+    - how long will it take to research a vaccine?
+    - is a vaccine being developed?
+    - is there a cure?
+    - is there a vaccine against coronavirus?
+    - is there si cure for covid-19?
+    - what does herd immunity mean?
+    - what is herd immunity
+    - what is inoculation?
+    - when can we expected a vaccine?
+    - when will inoculations be available?
+- intent: faq_vulnerable
+  examples: |
+    - am i more vulnerable if i have cancer?
+    - are children at risk of coronavirus?
+    - are children vulnerable to corona virus?
+    - are my dogs at risk?
+    - can cats get the virus?
+    - can children get coronavirus?
+    - can children get it?
+    - can dogs get the virus?
+    - can my baby get coronavirus?
+    - can my cat get it?
+    - an pets get the virus?
+    - can your age affect the severity of the illness?
+    - can your age affect the severity?
+    - does my age matter?
+    - does respiratory disease increase my risk?
+    - how many years old are those at risk?
+    - how old are those likely to have a severe reaction?
+    - how what age group is most at risk
+    - i am pregnant, am i at a higher risk?
+    - i am years old
+    - i am years old, am i at risk?
+    - i have asthma, am i more at risk
+    - i'm concerned about my parents
+    - i'm pregnant, am i at a higher risk?
+    - i'm worried about my grand parents
+    - should i be worried about my parents?
+    - should i be worried if i'm expecting?
+    - what age group is most vulnerable?
+    - what age range is most at risk?
+    - what are the high risk groups?
+    - what are ventilators for
+    - what groups are vulnerable?
+    - what if i'm high risk?
+    - what if i'm years old?
+    - what if someone is diabetic?
+    - what people are most likely to experience severe symptoms?
+    - who is most at risk of severe symptoms?
+    - who is most likely to need hospital treatment?
+    - who is most likely to need to go to the hospital?
+    - who might need intensive care?
+    - who might need ventilators?
+    - who should avoid contact during the outbreak?
+    - who should avoid contact?
+    - who should i avoid contact with during the outbreak?
+    - why are older age people more at risk from this illness?
+    - why are symptoms more severe depending on how old i am?
+    - why are symptoms more severe in some people?
+    - why do some people need intensive care?
+    - why do we need ventilators?
+    - why does age affect the severity?
+    - why does my age matter?
+- intent: faq_testing
+  examples: |
+    - are tests available?
+    - are there tests to detect corona?
+    - can i have a test even if i don't have symptoms?
+    - can i have a test if i think i have coronavirus?
+    - can i have a test?
+    - how are they testing people for covid19?
+    - how can i get tested?
+    - how do they test for covid-19?
+    - how do they test someone for covid-19?
+    - how does testing for corona work?
+    - how does testing work?
+    - i think i have coronavirus, should i get a test?
+    - i think i've got it, should i get a test?
+    - is there any testing going on?
+    - when should i get a test?
+    - when will testing be available?
+    - where are test available?
+    - who are they testing for corona virus right now?
+    - who can get tested?
+- intent: faq_supplies
+  examples: |
+    - are the supermarkets going to run out of food?
+    - are the supermarkets going to run out of supplies?
+    - can i go to the shops for
+    - can i go to the shops for that?
+    - could there be shortages?
+    - do i need to buy anything?
+    - do i need to buy more
+    - do i need to buy more toilet paper
+    - do people need to stockpile?
+    - i need to buy
+    - i need to buy can i go to the shops for that
+    - i need to buy more
+    - i need to buy more medicine
+    - i need to buy more soap
+    - i'm worried about supply chains"
+    - should i stockpile?
+    - should we be worried about food shortages?
+    - what extra supplies to do i need
+    - what food should i be stocking up?
+    - what if i need more soap?
+    - what if i run out of soap and need to buy more?
+    - what is panic buying
+    - what kind of food should i buy?
+    - what should i do if the supermarkets are empty?
+    - what should i do if there's a shortage?
+    - what should i stock up on?
+    - what supplies might there be a shortage of?
+    - what supplies should i stock up on?
+    - what things should i buy
+    - what type of food is good for stocking up?
+    - why are people panic-buying?
+    - will shortages be a problem?
+    - will supply chains be affected
+- intent: faq_whatisit
+  examples: |
+    - how are viruses formed?
+    - how are viruses structured?
+    - how do viruses behave?
+    - how do viruses happen?
+    - how do viruses work?
+    - how does a pandemic work?
+    - how does an epidemic work?
+    - how does covid work?
+    - how is a virus structured?
+    - how is the corona virus structured?
+    - is covid-19 a virus?
+    - what are corona viruses?
+    - what are viruses?
+    - what do they mean by \"pandemic\"
+    - what do viruses look like?
+    - what does \"pandemic\" mean?
+    - what does a virus look like?
+    - what does an outbreak mean?
+    - what does covid mean?
+    - what does covid stand for?
+    - what does covid19 mean?
+    - what does covid-19 mean?
+    - what does covid19 stand for?
+    - what does it mean if we have a pandemic?
+    - what does it mean if we have an outbreak?
+    - what does outbreak mean?
+    - what is a pandemic?
+    - what is a virus?
+    - what is an epidemic?
+    - what is corona?
+    - what is covid-19
+    - what is pandemic
+    - what is the corona virus?
+    - what is the difference between and epidemic and a pandemic?
+    - what is the full name of coronavirus?
+    - what is the full name of covid-19?
+    - what is the full name of the virus?
+    - what is the structure of a virus?
+    - what is the structure of coronavirus
+    - what kind of disease is corona?
+    - what kind of illness is corona virus?
+    - why is it called corona virus?
+- intent: inform
+  examples: |
+    - [Karnataka](location)
+    - [Tamilnadu](location)
+    - [Kerala](location)
+    - [Pondichhery](location)
+    - [Maharastra](location)
+    - [Goa](location)
+    - [AndhraPradesh](location)
+    - [Telangana](location)
+    - [MadhyaPradesh](location)
+    - [UP](location)
+    - [Delhi](location)
+    - [Gujrat](location)
+    - [Hariyana](location)
+    - [HimachalPradesh](location)
+    - [Uttarakhand](location)
+    - [Jammu and Kashmir](location)
+    - [Ladakh](location)
+    - [Chattisgarh](location)
+    - [Bihar](location)
+    - [Jharkhand](location)
+    - [Odisha](location)
+    - [WestBengal](location)
+    - [Sikkim](location)
+    - [Assam](location)
+    - [Meghalaya](location)
+    - [Manipur](location)
+    - [Nagaland](location)
+    - [Mijoram](location)
+    - [Tripura](location)
+    - [Arunachal Pradesh](location)
+- intent: search_provider
+  examples: |
+    - I need a [hospital](facility_type)
+    - find me a nearby [hospital](facility_type)
+    - [hospital](facility_type)
+    - find me [test center](facility_type)
+    - [test center](facility_type)
+    - what is the nearby [test center](facility_type)
+    - [test center](facility_type) near me
+    - find me a nearby [test center](facility_type)
+    - I need [corona cases](facility_type) count
+    - what is the [corona cases](facility_type) number
+    - [corona cases](facility_type) number
+    - [corona cases](facility_type) count
+    - share me some [shelter homes](facility_type) address
+    - [shelter home](facility_type) near me
+    - [shelter home](facility_type) details
+    - where can i get [free food](facility_type)?
+    - organization is providing [free food](facility_type)?
+    - [free food](facility_type) near me
+    - [email](facility_type) me the details
+    - send me the details in my [email](facility_type)
+    - send me an [email](facility_type)
+- intent: get_name
+  examples: |
+    - My name is [Tuhin](name)
+    - [Tuhin](name)
+    - [TuhinSamanta](name)
+    - [Arti](name)
+    - [Atichot](name)
+    - [lalaporn](name)
+- synonym: ' hospital'
+  examples: |
+    - health centre
+    - infirmary
+    - medical centre
+    - medical institution
+    - clinic
+    - hospitals
+    - health centres
+    - infirmaries
+    - medical centres
+    - medical institutions
+    - clinics
+    - emergency room
+    - emergency
+- synonym: ' corona'
+  examples: |
+    - coronavirus
+    - covid
+    - covid-19
+    - covid19
+    - covid 19
+    - virus
+    - viral
+    - pandemic
+    - epidemic
+    - outbreak
+    - illness
+    - disease
+    - viruses
+    - infection
+- synonym: ' illness'
+  examples: |
+    - asthma
+    - diabetes
+    - asthmatic
+    - diabetic
+    - hypertension
+    - heart
+    - heart disease
+    - cardiovascular
+    - cardiovascular disease
+    - respiratory disease
+    - chronic
+    - cancer
+    - lung
+    - lung disease
+    - high blood pressure
+    - blood pressure
+- regex: name
+  examples: |
+    - [a-zA-Z0-9]{20}
+- regex: zip
+  examples: |
+    - [0-9]{6}
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+
+- intent: inform
+  examples: |
+    - My email is example@example.com
+    - random@example.com
+    - Please send it to anything@example.com
+    - Email is something@example.com
+
+- intent: faq_incubation
+  examples: |
+    - What is the incubation period of the corona virus disease?
+    - How long should I self-quarantine if I have been exposed to COVID-19?
+    - What is the COVID-19 incubation period for children?
+    - In what conditions does COVID-19 survive the longest?
+- intent: faq_risk
+  examples: |
+    - Who is most at risk for the corona virus disease?
+    - Are people of a particular age vulnerable to coronavirus disease?
+    - Can I get the coronavirus disease from swimming in a swimming pool? 
+    - Can the COVID-19 survive in drinking water?
+
+- intent: faq_SARS
+  examples: |
+    - Is the corona virus disease the same as SARS?
+    - What is the virus called which causes the coronavirus disease?
+    - What does COVID-19 stand for?
+    - How many different human coronaviruses are there?
+    - When did the coronavirus disease receive its name?
+    - How do viruses get their name?
+- intent: faq_virus
+  examples: |
+    - What is a corona virus?
+    - Is coronavirus a disease?
+    - How severe is the coronavirus disease?
+    - Is coronavirus disease zootonic?
+    - What is the definition of a pandemic?
+- intent: faq_source
+  examples: |
+    - Can humans become infected with a novel corona virus of animal source?
+    - Can COVID-19 be transmitted between humans and animals?
+    - Does COVID-19 mutate when minks are infected?
+    - What is the most likely ecological reservoirs for coronavirus disease?
+- intent: faq_symptoms
+  examples: |
+    - What are the symptoms of someone infected with a corona virus?
+    - How long should I self-quarantine if I have been exposed to COVID-19?
+    - What is asymptomatic case of COVID-19?
+    - What should I do if I have symptoms of COVID-19?
+    - 
+- intent: faq_transmit
+  examples: |
+    - Can corona viruse be transmitted from person to person?
+    - What are the possible modes of transmission of COVID-19?
+    - Can COVID-19 enter into the body by the hands?
+    - Is the coronavirus disease transmitted by direct contact?
+    - Can asymptomatic people transmit COVID-19?
+- intent: faq_vaccine
+  examples: |
+    - Is there a vaccine for a novel corona virus?
+    - name of covid-19 vaccine
+    - covid-19 vaccine update
+    - coronavirus vaccine
+    - coronavirus vaccine latest update
+    - covid-19 vaccine india
+    - which country will be the first to receive covid-19 vaccine
+    - covid-19 vaccine essay writing
+    - covid-19 vaccine tracker
+- intent: faq_treatment
+  examples: |
+    - Is there a treatment for a novel corona virus?
+    - Is there an antibiotic to treat COVID-19?
+    - What should you do in case one is infected by COVID-19?
+    - covid treatment update
+    - coronavirus symptoms day by day
+    - new treatment for covid-19
+    - covid treatment in hospital
+    - latest treatment for coronavirus
+    - how are covid patients treated in hospital
+- intent: faq_protect
+  examples: |
+    - What can I do to protect myself?
+- intent: faq_workers
+  examples: |
+    - Are health workers at risk from a novel corona virus?
+    - are health workers at risk from novel coronavirus
+    - what is the risk of infection with covid-19 among health care professionals
+    - impact of covid-19 on healthcare workers
+    - psychological impact of covid-19 on health care workers
+    - should healthcare workers quarantine from family
+    - healthcare workers and covid-19
+    - covid-19 and the risk to health care workers
+    - how are healthcare workers getting covid
+
+- intent: faq_WHO
+  examples: |
+    - What WHO recommendations for countries?
+    - who recommendations for covid-19
+    - world health organization
+    - world health organization travel ban
+    - travel restrictions by country
+    - coronavirus travel restrictions
+    - who travel restrictions
+    - international travel restrictions
+    - does the government require you to stay home for 14 days after traveling
+- intent: faq_child
+  examples: |
+    - Is My Child at Risk for corona virus (COVID-19)?
+    - How can I protect my child from covid-19 infection ?
+    - covid-19 symptoms in toddlers
+    - covid symptoms in kids rash
+    - covid kids vomiting
+    - can babies get the coronavirus disease
+    - what is the risk of my child becoming sick with the coronavirus disease
+    - what should i do if my child has symptoms of covid-19
+- intent: faq_family
+  examples: |
+    - What Should I Do if a Family Member Has Symptoms of corona virus (COVID-19)?
+    - what precautions should be taken in covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19
+    - what happens to a person suffering from covid-19 answer
+    - what precautions should be taken for corona
+    - if a family member test positive for covid-19
+    - what should you do if you think you have the coronavirus disease?
+    - 10 precautions of covid-19
+    - what if someone in my house has coronavirus
+
+- intent: faq_test
+  examples: |
+    - How Do Doctors Test People for corona virus (COVID-19)?
+    - Can COVID-19 be detected by CT scan?
+    - Is temperature screening effective to detect the coronavirus disease?
+    - Has the coronavirus disease been detected in blood and stool?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how do they test for coronavirus
+    - diagnostic test for covid-19
+    - how soon after exposure corona can i be tested
+    - pcr covid test
+    - coronavirus test results
+    - how long can you test positive for covid-19
+    - corona test report
+- intent: faq_information
+  examples: |
+    - Where Can I Get Updated Information on corona virus (COVID-19)?
+    - How can one get information about the coronavirus on WhatsApp?
+    - coronavirus worldometer
+    - coronavirus cases by country
+    - world health organization covid-19
+    - world health organization coronavirus
+- intent: faq_SARA_CoV_2
+  examples: |
+    - What is COVID-19? What is SARS-CoV-2?
+    - What is SARS-CoV-2?
+    - What is the virus called which causes the coronavirus disease?
+- intent: faq_origin
+  examples: |
+    - Where do corona viruses come from?
+    - What is source of corona virus ?
+    - What is the origin of corona virus?
+    - From where does the corona virus get originated?
+- intent: faq_seasonal
+  examples: |
+    - Is this virus comparable to SARS or to the seasonal flu?
+    - How are COVID-19 and influenza viruses similar?
+    - Is COVID-19 caused by a virus or by bacteria?
+- intent: faq_transmission
+  examples: |
+    - What is the mode of transmission of corona virus?
+    - Can corona viruse be transmitted from person to person?
+    - What are the possible modes of transmission of COVID-19?
+    - Can COVID-19 enter into the body by the hands?
+    - Is the coronavirus disease transmitted by direct contact?
+    - Can asymptomatic people transmit COVID-19?
+- intent: faq_infectitious
+  examples: |
+    - When is a person infectious?
+    - when is a person infectious with covid
+    - if exposed to coronavirus how long before symptoms
+    - how long are you contagious with coronavirus
+    - how long after covid exposure will you test positive
+    - how long is covid-19 contagious
+    - how long can you test positive for covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how long after exposure are you contagious
+- intent: faq_severe
+  examples: |
+    - How severe is COVID-19 infection?
+    - How severe is the coronavirus disease?
+    - effect of covid-19
+    - effect of coronavirus
+    - covid severity levels
+    - covid-19 severity classification
+- intent: faq_life
+  examples: |
+    - Are some people more at risk than others?
+    - Who is most at risk to the coronavirus disease?
+    - who is at higher risk for severe illness from covid-19
+    - who is most at risk for the coronavirus disease
+    - who is at increased risk for severe disease
+    - identify individuals who may be more vulnerable to infection
+    - who is vulnerable to infection
+    - what groups are at higher risk of contracting covid-19
+    - who are most at risk of becoming severely ill
+    - what measures should one do to control the spread of diseases
+- intent: faq_children
+  examples: |
+    - Are children also at risk of infection and what is their potential role in transmission of covid19?
+    - what is the risk of my child becoming sick with covid-19 ?
+    - Are children at lower risk of COVID-19 than adults?
+    - What are the common symptoms of COVID-19 in children?
+    - Are people of a particular age vulnerable to coronavirus disease?
+    - what should i do if my child has symptoms of covid-19
+    - what is the risk of my child becoming sick with the coronavirus disease
+    - vomiting coronavirus child
+    - coronavirus symptoms in kids
+    - kids getting sick from covid
+    - covid-19 infants under 1
+    - can babies get the coronavirus disease
+    - covid-19 1 year-old
+- intent: faq_pregnancy
+  examples: |
+    - What is the risk of infection in pregnant women and neonates?
+- intent: faq_testing
+  examples: |
+    - When should I be tested for COVID-19?
+    - are tests available?
+    - are there tests to detect corona?
+    - can i have a test even if i don't have symptoms?
+    - can i have a test if i think i have coronavirus?
+    - can i have a test?
+    - how are they testing people for covid19?
+    - how can i get tested?
+    - how do they test for covid-19?
+    - how do they test someone for covid-19?
+    - how does testing for corona work?
+    - how does testing work?
+    - i think i have coronavirus, should i get a test?
+    - i think i've got it, should i get a test?
+    - is there any testing going on?
+    - when should i get a test?
+    - when will testing be available?
+    - where are test available?
+    - who are they testing for corona virus right now?
+    - who can get tested?
+- intent: faq_centre
+  examples: |
+    - Where can I get tested?
+    - covid-19 test procedure
+    - pcr covid test
+    - pcr test
+    - coronavirus test procedure
+    - should i get tested for covid quiz
+    - how long after being exposed to coronavirus should i get tested
+
+- intent: faq_allergy
+  examples: |
+    - Do persons suffering from pollen allergy or allergies in general have a higher risk to develop severe disease when having COVID-19?
+- intent: faq_fever
+  examples: |
+    - How can we differentiate between hay fever/pollen allergy related respiratory symptoms and COVID-19 infection?
+- intent: faq_isolation
+  examples: |
+    - Should people who suffer from pollen allergy self-isolate if they develop typical hay fever symptoms?
+- intent: faq_avoid
+  examples: |
+    - How can I avoid getting infected?
+    - Should I wear a mask to protect myself from the virus?
+    - Can masks prevent the transmission of COVID-19?
+    - How can I protect myself ?
+    - How can I be protected?
+    - What are the measures should I take to protect myself?
+- intent: faq_avoiding
+  examples: |
+    - How can I avoid infecting others?
+    - Should I wear a mask to protect myself from the virus?
+    - Can masks prevent the transmission of COVID-19?
+    - How can I protect myself ?
+    - How can I be protected?
+    - What are the measures should I take to protect myself?
+- intent: faq_distance
+  examples: |
+    - What is physical distancing and why and how should I do it?
+    - Am I safe outside of the house provided I avoid crowded areas e.g. can I go to the park or walk outside?
+    - What is social distancing ?
+    - Why would I be asked to self-isolate (as opposed to reducing social contact)?
+    - What is the purpose of social and physical distancing as defined by the World Health Organization?
+    - what is the difference between self-isolation self-quarantine and social distancing
+    - do i still need to quarantine for 14 days if i was around someone who has covid-19?
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - cdc covid quarantine guidelines
+    - how long to quarantine after positive covid test
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - cdc close contact definition
+    
+- intent: faq_mask
+  examples: |
+    - Are face masks effective in protecting against COVID-19?
+    - How well do face masks protect against coronavirus?
+    - Can a face mask really protect a person?
+- intent: faq_time
+  examples: |
+    - How long will it take to develop a vaccine?
+
+- intent: faq_influenza
+  examples: |
+    - Am I protected against COVID-19 if I had the influenza vaccine this year?
+- intent: faq_situation
+  examples: |
+    - What is the situation in Europe at the moment?
+    - What are the travel restrictions in the European Union?
+    - vaccine passport european union
+    - council of europe vaccine passport
+    - eu health passport
+- intent: faq_preparation
+  examples: |
+    - How prepared is Europe for COVID-19?
+    - What are the travel restrictions in the European Union?
+    - vaccine passport european union
+    - council of europe vaccine passport
+    - eu health passport
+- intent: faq_condition
+  examples: |
+    - What is the EU doing?
+    - What are the travel restrictions in the European Union?
+    - vaccine passport european union
+    - council of europe vaccine passport
+    - eu health passport
+- intent: faq_infected
+  examples: |
+    - How many people have been infected in the EU/EEA?
+    - What is the number of cases in EU?
+- intent: faq_outbreak
+  examples: |
+    - How long will this outbreak last? When will we see the peak?
+    - Why are we seeing rise in cases ?
+    - when is second wave of coronavirus expected in india
+    - how many waves of covid are expected
+    - covid-19 second wave, india
+    - second wave of corona meaning
+    - covid second wave symptoms
+    - what is second wave of coronavirus
+    - what wave of covid are we in
+    - second wave of covid
+- intent: faq_schools
+  examples: |
+    - Should schools and day centres be closed?
+    - when will daycares reopen in india
+    - when daycare will reopen in india
+    - day care centres during lockdown
+    - when will pre-schools reopen in india
+    - daycare opening after lockdown
+    - preschool reopening in india
+    - when will daycares reopen in bangalore
+    - day care centre near me
+- intent: faq_travel
+  examples: |
+    - What are the travel restrictions in the European Union?
+    - vaccine passport european union
+    - council of europe vaccine passport
+    - eu health passport
+- intent: faq_precautions
+  examples: |
+    - What precautions should I take if I need to travel?
+    - What are the best general tips for all travelers during the COVID-19 pandemic?
+    - What should you do to keep yourself and others safe from COVID-19?
+    - what things should we keep in mind to stay safe while travelling to a new place
+    - precautions while travelling
+    - safety measures while travelling during covid-19
+    - precautions to take while travelling during covid
+    - precautions to be taken while travelling during covid-19
+    - how would you keep yourself safe while travelling
+    - safety precautions when travelling
+    - what precautions should be taken while on a journey
+
+- intent: faq_plane
+  examples: |
+    - What is the risk of infection when travelling by plane?
+    - What Is the Risk of Catching the Coronavirus on a Plane?
+    - How likely are you to be infected by the coronavirus on a flight?
+    - is it safe to travel by airplane during the covid-19 pandemic?
+    - what is the risk of getting covid-19 from flying?
+    - can flying on an airplane increase my risk of getting covid-19?
+    - air travel covid risk?
+
+- intent: faq_package
+  examples: |
+    - Are people working in the supply chain including logistics, control services, retail, etc. at risk of getting COVID-19 by handling packages? What measures can be taken to reduce the risk of getting infected in this type of work setting?
+    - Are people in logistics and packaging at high risks?
+- intent: faq_food
+  examples: |
+    - What is the risk of COVID-19 infection from food products imported from affected areas?
+    - Can the corona virus can be spread through food, including restaurant take out, refrigerated or frozen packaged food ?
+    - Can COVID-19 spread through food?
+    - Can the coronavirus disease be transmitted through the consumption of cooked foods, including animal products?
+    - Are there precautions to take while eating in a restaurant during the COVID-19 pandemic?
+    - can you get covid from food cooked by infected person
+    - what are the risks of food from takeout or drive-thru food
+    - can you get covid from sharing food
+    - serving food during covid
+    - is it safe to cook for my family if i have covid
+    - is it safe to order food during coronavirus
+    - can food from an infected cook give you covid-19?
+    - can you get covid from fast food
+- intent: faq_animal
+  examples: |
+    - What is the risk of COVID-19 infection from animals or animal products imported from affected areas?
+    - Can I catch COVID-19 from my pet?
+    - Can I get covid-19 from my pets or other animals ?
+    - Can COVID-19 be transmitted between humans and animals?
+    - Can the coronavirus disease be transmitted through the consumption of cooked foods, including animal products?
+    - can your pets get covid-19 from humans
+    - can pets die from covid
+    - can cats get covid-19 symptoms
+    - can i walk my dog if i have covid
+    - can cats die from covid
+    - can my dog get covid if im positive
+    - covid-19 dog infection
+    - can dogs get covid and die
+- intent: faq_lung
+  examples: |
+    - I have a lung condition
+    - Are people with respiratory disease more likely to die of COVID-19 than those without?
+    - copd and covid survival rate
+    - emphysema and covid-19
+    - covid-19 and copd survival rate
+    - who is at the highest risk to spread the covid-19
+    - is having hypertension considered as a high risk for covid-19
+    - who is considered high risk for covid-19
+- intent: faq_respiration
+  examples: |
+    - Please can you provide detailed information about who is at high risk from a respiratory standpoint?
+    - Are people with respiratory disease more likely to die of COVID-19 than those without?
+    - copd and covid survival rate
+    - emphysema and covid-19
+    - covid-19 and copd survival rate
+    - who is at the highest risk to spread the covid-19
+    - is having hypertension considered as a high risk for covid-19
+    - who is considered high risk for covid-19
+
+- intent: faq_sick
+  examples: |
+    - Are there any additional measures that I should take to limit my risk of getting sick as I have a lung condition?
+    - healthy lungs food
+    - what can damage your lungs
+    - why do you need to keep your lungs, and heart healthy
+    - why is it important to have healthy lungs
+    - how to keep lungs healthy naturally
+    - how to take care of your respiratory and circulatory system
+    - how to check if your lungs are healthy at home
+    - reduce the risk of respiratory disease
+- intent: faq_isolating
+  examples: |
+    - Should I consider self-isolating to avoid catching the virus?
+    - importance of washing hands and social distancing to prevent the spread of covid-19
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how to protect yourself from covid-19 essay
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - safety precautions for covid-19
+    - social distancing guidelines
+    - self-quarantine
+
+- intent: faq_outside
+  examples: |
+    - Am I safe outside of the house provided I avoid crowded areas e.g. can I go to the park or walk outside?
+    - What is social distancing ?
+    - Why would I be asked to self-isolate (as opposed to reducing social contact)?
+    - What is the purpose of social and physical distancing as defined by the World Health Organization?
+    - what is the difference between self-isolation self-quarantine and social distancing
+    - do i still need to quarantine for 14 days if i was around someone who has covid-19?
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - cdc covid quarantine guidelines
+    - how long to quarantine after positive covid test
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - cdc close contact definition
+- intent: faq_respiratory
+  examples: |
+    - Are people with respiratory disease more likely to die of COVID-19 than those without?
+    - copd and covid survival rate
+    - emphysema and covid-19
+    - covid-19 and copd survival rate
+    - who is at the highest risk to spread the covid-19
+    - is having hypertension considered as a high risk for covid-19
+    - who is considered high risk for covid-19
+- intent: faq_cough
+  examples: |
+    - As part of my condition, I regularly have a dry cough and fever – is there a way to distinguish these symptoms with those of COVID-19?
+- intent: faq_protection
+  examples: |
+    - Should I wear a mask to protect myself from the virus?
+    - Can masks prevent the transmission of COVID-19?
+    - How can I protect myself ?
+    - How can I be protected?
+    - What are the measures should I take to protect myself?
+- intent: faq_pet
+  examples: |
+    - Can I catch COVID-19 from my pet?
+    - Can I get covid-19 from my pets or other animals ?
+    - Can COVID-19 be transmitted between humans and animals?
+    - Can the coronavirus disease be transmitted through the consumption of cooked foods, including animal products?
+    - can your pets get covid-19 from humans
+    - can pets die from covid
+    - can cats get covid-19 symptoms
+    - can i walk my dog if i have covid
+    - can cats die from covid
+    - can my dog get covid if im positive
+    - covid-19 dog infection
+    - can dogs get covid and die
+- intent: faq_smoke
+  examples: |
+    - My neighbours often smoke in their garden and the smoke comes into my house if the windows are open. Can COVID-19 be transmitted through exhaled smoke?
+- intent: faq_old
+  examples: |
+    - The news says that the worst affected by COVID-19 are the older age population and ‘people’ with pre-existing conditions. Are ‘people with pre-existing conditions’ also older or does this refer to people of any age?
+- intent: faq_vulnerable
+  examples: |
+    - I had the flu vaccine this year, am I protected from this virus?
+- intent: faq_elder
+  examples: |
+    - What is being done to protect the vulnerable population (elderly, people with health conditions)?
+    - am i more vulnerable if i have cancer?
+    - are children at risk of coronavirus?
+    - are children vulnerable to corona virus?
+    - are my dogs at risk?
+    - can cats get the virus?
+    - can children get coronavirus?
+    - can children get it?
+    - can dogs get the virus?
+    - can my baby get coronavirus?
+    - can my cat get it?
+    - an pets get the virus?
+    - can your age affect the severity of the illness?
+    - can your age affect the severity?
+    - does my age matter?
+    - does respiratory disease increase my risk?
+    - how many years old are those at risk?
+    - how old are those likely to have a severe reaction?
+    - how what age group is most at risk
+    - i am pregnant, am i at a higher risk?
+    - i am years old
+    - i am years old, am i at risk?
+    - i have asthma, am i more at risk
+    - i'm concerned about my parents
+    - i'm pregnant, am i at a higher risk?
+    - i'm worried about my grand parents
+    - should i be worried about my parents?
+    - should i be worried if i'm expecting?
+    - what age group is most vulnerable?
+    - what age range is most at risk?
+    - what are the high risk groups?
+    - what are ventilators for
+    - what groups are vulnerable?
+    - what if i'm high risk?
+    - what if i'm years old?
+    - what if someone is diabetic?
+    - what people are most likely to experience severe symptoms?
+    - who is most at risk of severe symptoms?
+    - who is most likely to need hospital treatment?
+    - who is most likely to need to go to the hospital?
+    - who might need intensive care?
+    - who might need ventilators?
+    - who should avoid contact during the outbreak?
+    - who should avoid contact?
+    - who should i avoid contact with during the outbreak?
+    - why are older age people more at risk from this illness?
+    - why are symptoms more severe depending on how old i am?
+    - why are symptoms more severe in some people?
+    - why do some people need intensive care?
+    - why do we need ventilators?
+    - why does age affect the severity?
+    - why does my age matter?
+- intent: faq_organisation
+  examples: |
+    - What are organisations in Europe doing about the situation?
+    - What are the travel restrictions in the European Union?
+    - vaccine passport european union
+    - council of europe vaccine passport
+    - eu health passport
+- intent: faq_air
+  examples: |
+    - Can the virus that causes COVID-19 be transmitted through the air?
+- intent: faq_feces
+  examples: |
+    - Can I catch COVID-19 from the feces of someone with the disease?
+    - Can the coronavirus disease spread through feces?
+    - Does COVID-19 survive in sewage?
+- intent: faq_prevent
+  examples: |
+    - What can I do to protect myself and prevent the spread of disease
+- intent: faq_measures
+  examples: |
+    - Protection measures for persons who are in or have recently visited (past 14 days) areas where COVID-19 is spreading
+- intent: faq_likely
+  examples: |
+    - How likely am I to catch COVID-19?
+- intent: faq_worry
+  examples: |
+    - Should I worry about COVID-19?
+- intent: faq_antibiotics
+  examples: |
+    - Are antibiotics effective in preventing or treating the COVID-19?
+- intent: faq_medicines
+  examples: |
+    - Are there any medicines or therapies that can prevent or cure COVID-19
+- intent: faq_wear
+  examples: |
+    - Should I wear mask to protect myself?
+    - Can masks prevent the transmission of COVID-19?
+- intent: faq_dispose
+  examples: |
+    - How to put on use take off and dispose of a mask?
+- intent: faq_period
+  examples: |
+    - How long is the incubation period for COVID-19?
+    - What is the COVID-19 incubation period for children?
+    - How long should I self-quarantine if I have been exposed to COVID-19?
+    - how long after exposure to test positive for covid
+    - how soon after exposure corona can i be tested
+    - average incubation period of covid-19 virus
+    - average incubation period for covid
+    - how long can you test positive for covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how long after exposure to test for covid
+    - how long after exposure to covid are you contagious
+
+- intent: faq_catch
+  examples: |
+    - Can I catch COVID-19 from my pet?
+- intent: faq_receive
+  examples: |
+    - Is it safe to receive a package from any area where COVID-19 has been reported?
+- intent: faq_not
+  examples: |
+    - Is there anything I should not do?
+- intent: faq_show
+  examples: |
+    - Can you have COVID-19 and show no symptoms?
+- intent: faq_second
+  examples: |
+    - Can one get corona virus for a second time?
+- intent: faq_survive
+  examples: |
+    - How long can the virus survive on surfaces?
+- intent: faq_illness
+  examples: |
+    - How has attention to other major illnesses (like cancer) been affected?
+- intent: faq_happen
+  examples: |
+    - Is it possible that one day this will happen again?
+- intent: faq_spread
+  examples: |
+    - How to stop infection spreading of covid-19 ?
+- intent: faq_help
+  examples: |
+    - What to do if you need medical help ? 
+- intent: faq_protecting
+  examples: |
+    - How to protect yourself from coronavirus ?
+- intent: faq_danger
+  examples: |
+    - Who are the People most at risk ? 
+- intent: faq_symptoms
+  examples: |
+    - What are the symptoms of someone infected with a corona virus?
+- intent: faq_isolate
+  examples: |
+    - How long you should self isolate ?
+    - What should I do if I’m asked to self-isolate?
+    - Is self-isolation recommended for those with COVID-19?
+    - if you test positive for covid how long do you have to isolate
+    - self-isolation meaning
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - do i need to keep self-isolating if i have received a negative covid-19 test result?
+    - what to do if someone you know tests positive for covid
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - does my household need to self-isolate if i am coronavirus contact
+- intent: faq_Self-isolate
+  examples: |
+    - How long to self-isolate if you have symptoms ? 
+    - What should I do if I’m asked to self-isolate?
+    - Is self-isolation recommended for those with COVID-19?
+    - if you test positive for covid how long do you have to isolate
+    - self-isolation meaning
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - do i need to keep self-isolating if i have received a negative covid-19 test result?
+    - what to do if someone you know tests positive for covid
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - does my household need to self-isolate if i am coronavirus contact
+- intent: faq_live
+  examples: |
+    - What to do If you live with someone who has symptoms?
+- intent: faq_reduce
+  examples: |
+    - What should be done to reduce the spread of infection in your home ? 
+- intent: faq_treat 
+  examples: |
+    - How to Treat corona virus symptoms at home ? 
+- intent: faq_ibuprofen
+  examples: |
+    - Can I take ibuprofen if I have corona virus ? 
+- intent: faq_leave
+  examples: |
+    - When am I allowed to leave the house?
+- intent: faq_appointment
+  examples: |
+    - Can I go to the dentist, my GP or another medical appointment?
+- intent: faq_stay
+  examples: |
+    - Should I stay at home or go to work?
+- intent: faq_work 
+  examples: |
+    - I’m not a critical worker and I can’t work from home. What should I do?
+- intent: faq_essential
+  examples: |
+    - How can I find out if my work is essential or not?
+- intent: faq_friends
+  examples: |
+    - Can I see my friends?
+    - What steps can my family take to reduce our risk of getting covid-19 ?
+    - what are some tips to reduce the risk of covid-19
+    - importance of washing hands and social distancing to prevent the spread of covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how to protect yourself from covid-19 essay
+    - safety precautions for covid-19
+    - social distancing guidelines
+    - how can one prevent the spread of the coronavirus disease
+    - why is social distancing important
+- intent: faq_relatives
+  examples: |
+    - Can I visit elderly relatives?
+    - What steps can my family take to reduce our risk of getting covid-19 ?
+    - what are some tips to reduce the risk of covid-19
+    - importance of washing hands and social distancing to prevent the spread of covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how to protect yourself from covid-19 essay
+    - safety precautions for covid-19
+    - social distancing guidelines
+    - how can one prevent the spread of the coronavirus disease
+    - why is social distancing important
+- intent: faq_person
+  examples: |
+    - Can I go out to help a vulnerable person?
+- intent: faq_park
+  examples: |
+    - Can I go to park ? 
+- intent: faq_house
+  examples: |
+    - Can I move house?
+- intent: faq_green
+  examples: |
+    - Can I drive to a national park or other green space to walk?
+- intent: faq_break
+  examples: |
+    - What will happen to me if I break the rules?
+- intent: faq_have
+  examples: |
+    - What to do if you have symptoms ? 
+- intent: faq_prevention
+  examples: |
+    - What can I do to prevent catching or spreading the germs ? 
+- intent: faq_residence
+  examples: |
+    - Are the Intercollegiate Halls of Residence open?
+- intent: faq_teaching
+  examples: |
+    - Is teaching continuing for students?
+    - Should schools and day centres be closed?
+    - when will daycares reopen in india
+    - when daycare will reopen in india
+    - day care centres during lockdown
+    - when will pre-schools reopen in india
+    - daycare opening after lockdown
+    - preschool reopening in india
+    - when will daycares reopen in bangalore
+    - day care centre near me
+- intent: faq_what
+  examples: |
+    - What is corona virus ? 
+- intent: faq_social
+  examples: |
+    - What is social distancing ?
+    - Why would I be asked to self-isolate (as opposed to reducing social contact)?
+    - What is the purpose of social and physical distancing as defined by the World Health Organization?
+    - what is the difference between self-isolation self-quarantine and social distancing
+    - do i still need to quarantine for 14 days if i was around someone who has covid-19?
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - cdc covid quarantine guidelines
+    - how long to quarantine after positive covid test
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - cdc close contact definition
+- intent: faq_effect
+  examples: |
+    - What effect does coronavirus have on pregnant women?
+    - What are the symptoms and complications that covid-19 can cause ?
+    - what are the complications of covid-19
+    - what are the causes of covid-19
+    - coronavirus symptoms day by day
+    - cause and effect of covid-19
+    - causes of covid-19 in points
+    - how long do coronavirus symptoms last
+    - symptoms of covid-19
+    - coronavirus symptoms 2020
+- intent: faq_baby
+  examples: |
+    - What effect will coronavirus have on my baby if I am diagnosed with the infection?
+- intent: faq_pregnant
+  examples: |
+    - Why are pregnant women in a vulnerable group?
+- intent: faq_travelling
+  examples: |
+    - What is the travel advice if I am pregnant?
+- intent: faq_natal
+  examples: |
+    - Should I attend my antenatal and postnatal appointments?
+- intent: faq_fever
+  examples: |
+    - What should I do if I develop a fever or temperature, or both, when I am pregnant?
+    - i'm pregnant and have covid
+    - covid and pregnancy 28 weeks
+    - natural remedies for covid during pregnancy
+    - pregnancy and coronavirus and work
+    - pregnant and covid positive
+
+- intent: faq_impact
+  examples: |
+    - What impact will corona virus have on my pregnancy?
+    - Is there any advice for birth partners during the corona virus pandemic?
+    - giving birth during covid
+    - pregnancy and covid-19 and working
+    - pregnancy and coronavirus going to work
+    - working while pregnant during covid
+    - giving birth with covid
+- intent: faq_childbirth
+  examples: |
+    - Will my childbirth choices be affected by the coronavirus pandemic?
+    - pregnancy and covid-19 and working
+    - pregnancy and coronavirus going to work
+- intent: faq_labour_birth
+  examples: |
+    - Will I be able to have my birth partner with me during labour and birth?
+    - Is there any advice for birth partners during the corona virus pandemic?
+    - giving birth during covid
+    - pregnancy and covid-19 and working
+    - pregnancy and coronavirus going to work
+    - working while pregnant during covid
+    - giving birth with covid
+- intent: faq_induced
+  examples: |
+    - Will I be able to have my birth partner with me if I am being induced?
+    - Is there any advice for birth partners during the corona virus pandemic?
+    - giving birth during covid
+    - pregnancy and covid-19 and working
+    - pregnancy and coronavirus going to work
+    - working while pregnant during covid
+    - giving birth with covid
+- intent: faq_operation
+  examples: |
+    - Will my birth partner be able to stay with me if I have a caesarean or instrumental birth that occurs in an operating theatre?
+    - Is there any advice for birth partners during the corona virus pandemic?
+    - giving birth during covid
+    - pregnancy and covid-19 and working
+    - pregnancy and coronavirus going to work
+    - working while pregnant during covid
+    - giving birth with covid
+- intent: faq_advice
+  examples: |
+    - Is there any advice for birth partners during the corona virus pandemic?
+    - giving birth during covid
+    - pregnancy and covid-19 and working
+    - pregnancy and coronavirus going to work
+    - working while pregnant during covid
+    - giving birth with covid
+
+- intent: faq_tested
+  examples: |
+    - How will I be tested for corona virus?
+    - are tests available?
+    - are there tests to detect corona?
+    - can i have a test even if i don't have symptoms?
+    - can i have a test if i think i have coronavirus?
+    - can i have a test?
+    - how are they testing people for covid19?
+    - how can i get tested?
+    - how do they test for covid-19?
+    - how do they test someone for covid-19?
+    - how does testing for corona work?
+    - how does testing work?
+    - i think i have coronavirus, should i get a test?
+    - i think i've got it, should i get a test?
+    - is there any testing going on?
+    - when should i get a test?
+    - when will testing be available?
+    - where are test available?
+    - who are they testing for corona virus right now?
+    - who can get tested?
+- intent: faq_positive
+  examples: |
+    - What should I do if I test positive for coronavirus?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how long after exposure to test positive for covid
+    - what should i do if i have tested positive for covid-19
+    - how long can you test positive for covid-19
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - how soon can you test positive for covid
+    - what to do if tested positive for coronavirus
+    - can you test positive for covid without symptoms
+
+- intent: faq_contact
+  examples: |
+    - Why would I be asked to self-isolate (as opposed to reducing social contact)?
+    - What is the purpose of social and physical distancing as defined by the World Health Organization?
+    - what is the difference between self-isolation self-quarantine and social distancing
+    - do i still need to quarantine for 14 days if i was around someone who has covid-19?
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - cdc covid quarantine guidelines
+    - how long to quarantine after positive covid test
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - cdc close contact definition
+
+- intent: faq_should
+  examples: |
+    - What should I do if I’m asked to self-isolate?
+    - Is self-isolation recommended for those with COVID-19?
+    - if you test positive for covid how long do you have to isolate
+    - self-isolation meaning
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - do i need to keep self-isolating if i have received a negative covid-19 test result?
+    - what to do if someone you know tests positive for covid
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - does my household need to self-isolate if i am coronavirus contact
+
+- intent: faq_care
+  examples: |
+    - How will my care be managed after I have recovered from coronavirus?
+    - How many days after Covid recovery can I take vaccine?
+    - dry cough after covid recovery
+    - covid recovery symptoms day by day
+    - post covid recovery symptoms
+    - precautions after covid recovery
+    - after covid recovery side effects
+    - diet after covid recovery
+    - post covid recovery diet
+    - how long should i stay in home isolation if i have the coronavirus disease?
+- intent: faq_unwell
+  examples: |
+    - What do I do if I feel unwell or I’m worried about my baby during self-isolation?
+    - government guidelines for pregnancy during covid
+    - pregnancy and covid-19 and working
+    - covid and pregnancy third trimester
+    - coronavirus and pregnancy and work
+    - i'm pregnant and have covid
+    - pregnancy and coronavirus
+    - i'm pregnant with covid-19
+
+- intent: faq_birth
+  examples: |
+    - Will being in self-isolation for suspected or confirmed corona virus affect where I give birth?
+    - Can I breastfeed after Covid vaccine?
+    - pregnancy and covid-19 and working
+    - pregnancy and coronavirus going to work
+    - does covid affect baby in womb
+    - covid and pregnancy 28 weeks
+    - giving birth during coronavirus
+    - giving birth during covid
+    - covid and pregnancy second trimester
+
+- intent: faq_affect
+  examples: |
+    - Will being in self-isolation for suspected or confirmed coronavirus affect how I give birth?
+    - Do pregnant women with suspected or confirmed COVID-19 need to give birth by caesarean section?
+    - Does COVID-19 cause premature birth?
+    - Can a pregnant woman receive Covid-19 vaccine?
+    - government guidelines for pregnancy during covid
+    - pregnancy and covid-19 and working
+    - does covid affect baby in womb
+    - pregnancy and coronavirus going to work
+    - covid and pregnancy second trimester
+    - covid and pregnancy 28 weeks
+    - if a pregnant woman is covid positive does it affect the baby
+    - covid and pregnancy third trimester
+
+- intent: faq_labour
+  examples: |
+    - What happens if I go into labour during my self-isolation period?
+    - what happens if you have covid when you give birth
+    - do you have to self-isolate before being induced
+    - childcare during labour lockdown
+    - self-isolating before due date
+    - covid baby delivery rules
+    - childcare during birth coronavirus
+    - labour and coronavirus
+    - coronavirus and childbirth
+
+- intent: faq_pass
+  examples: |
+    - Could I pass corona virus to my baby?
+    - how do they test babies for covid
+    - age for covid testing
+    - age limit for covid testing
+    - what is the risk of my child becoming sick with the coronavirus disease
+    - covid testing for babies near me
+    - what should i do if my child has symptoms of covid-19
+    - can babies get the coronavirus disease
+- intent: faq_baby_test
+  examples: |
+    - Will my baby be tested for coronavirus?
+    - how are babies tested for covid
+    - how do they test babies for covid
+    - age for covid testing
+    - age limit for covid testing
+    - what is the risk of my child becoming sick with the coronavirus disease
+    - covid testing for babies near me
+    - what should i do if my child has symptoms of covid-19
+    - can babies get the coronavirus disease
+
+- intent: faq_origin
+  examples: |
+    - What is corona virus ?
+    - coronavirus - wikipedia
+    - when was covid-19 discovered
+- intent: faq_name
+  examples: |
+    - Why is this disease being called corona virus disease 2019, covid-19 ?
+    - What is the virus called which causes the coronavirus disease?
+    - What does COVID-19 stand for?
+    - Is COVID-19 caused by a virus or by bacteria?
+    - why is covid-19 called covid-19
+    - covid-19 meaning
+    - what is the name of the pathogen that causes covid-19
+    - covid-19 virus name
+    - from where coronavirus got its name
+    - covid-19 full name in english
+- intent: faq_blame
+  examples: |
+    - Why might someone blame or avoid individuals and groups (create stigma) because of covid-19 ?
+    - Why is COVID-19 causing so much stigma?
+    - Does the coronavirus create stigmas in the population?
+    - How do we ensure human rights and reduce stigma and discrimination?
+    - stigmatization of covid-19 patients and its effects
+    - social stigma during covid-19 in india
+    - stigma of covid 19 meaning
+    - social stigma associated with covid-19
+    - covid-19 stigma and discrimination
+    - mental health stigma and covid-19
+    - effects of stigma on covid-19 patients
+    - social stigma during pandemic
+- intent: faq_stigma
+  examples: |
+    - How can people help stop stigma related to covid-19 ?
+    - Why is COVID-19 causing so much stigma?
+    - Does the coronavirus create stigmas in the population?
+    - How do we ensure human rights and reduce stigma and discrimination?
+    - stigmatization of covid-19 patients and its effects
+    - social stigma during covid-19 in india
+    - stigma of covid 19 meaning
+    - social stigma associated with covid-19
+    - covid-19 stigma and discrimination
+    - mental health stigma and covid-19
+    - effects of stigma on covid-19 patients
+    - social stigma during pandemic
+
+- intent: faq_sources
+  examples: |
+    - What is source of corona virus ?
+    - What is the origin of corona virus?
+    - From where does the corona virus get originated?
+- intent: faq_how
+  examples: |
+    - How does corona virus spread ?
+    - Is the coronavirus disease transmitted by direct contact?
+    - Can COVID-19 enter into the body by the hands?
+- intent: faq_rise
+  examples: |
+    - Why are we seeing rise in cases ?
+    - when is second wave of coronavirus expected in india
+    - how many waves of covid are expected
+    - covid-19 second wave, india
+    - second wave of corona meaning
+    - covid second wave symptoms
+    - what is second wave of coronavirus
+    - what wave of covid are we in
+    - second wave of covid
+- intent: faq_someone
+  examples: |
+    - Can someone who has covid-19 spread the illness to others ?
+    - Should you meet with other people during the COVID-19 pandemic?
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - can someone who has recovered from covid-19 spread the illness to others
+    - can someone who has had covid-19 spread the illness to others
+    - what if i was in close contact with someone who has been exposed to a confirmed covid-19 patient?
+    - how soon after exposure corona can i be tested
+    - is it safe to be around someone who has recovered from covid
+    - can someone who has been quarantined for covid-19 spread the illness to others?
+    - how long are you contagious with coronavirus
+- intent: faq_restaurant
+  examples: |
+    - Can the corona virus can be spread through food, including restaurant take out, refrigerated or frozen packaged food ?
+    - Can COVID-19 spread through food?
+    - Can the coronavirus disease be transmitted through the consumption of cooked foods, including animal products?
+    - Are there precautions to take while eating in a restaurant during the COVID-19 pandemic?
+    - can you get covid from food cooked by infected person
+    - what are the risks of food from takeout or drive-thru food
+    - can you get covid from sharing food
+    - serving food during covid
+    - is it safe to cook for my family if i have covid
+    - is it safe to order food during coronavirus
+    - can food from an infected cook give you covid-19?
+    - can you get covid from fast food
+
+- intent: faq_sickness
+  examples: |
+    - Can I get sick with covid-19 if its on food ? 
+    - Are food items safe in covid?
+    - Can I be infected from food items?
+    - Does food items spread covid?
+- intent: faq_warm
+  examples: |
+    - Will warm weather stop the outbreak of covid-19 ? 
+    - Can warmness lower the rate of Covid?
+    - Does driniking warm water help in any way to stop the spread?
+    - Can the coronavirus disease be transmitted in hot or humid climates?
+    - Is there any relationship between climate change and the coronavirus disease?
+- intent: faq_community
+  examples: |
+    - What is community spread ? 
+    - How it is spreading through community?
+    - is community gathering allowed?
+    - can we gather a large mass of people?
+- intent: faq_temperature
+  examples: |
+    - What temperature kills the virus that causes covid-19 ?
+    - At what temperature the virus gets killed?
+    - After what temperature the effect of virus would be destroyed?
+- intent: faq_mosquitoes
+  examples: |
+    - Can mosquitoes or tricks spread the virus that causes covid-19 ?
+    - Can it be transmitted by the flies or mosquitoes?
+    - Is it like dengue or malaria?
+- intent: faq_protection
+  examples: |
+    - How can I protect myself ? 
+    - How can I be protected?
+    - What are the measures should I take to protect myself?
+- intent: faq_close
+  examples: |
+    - What should I do if I have had close contact with someone who has covid-19 ?
+    - What if I closely contacted with a positive person?
+    - What steps shoud I take if I am close to a covid patient?
+    - Should you meet with other people during the COVID-19 pandemic?
+- intent: faq_face
+  examples: |
+    - Does CDC recommend using face masks or face coverings to prevent covid-19 ?
+    - is face masks safe to wear?
+    - How well do face masks protect against coronavirus?
+    - What kind of mask is recommended to prevent COVID-19 transmission?
+    - Can masks prevent the transmission of COVID-19?
+    - Does WHO recommend the use of masks with exhalation valves to prevent transmission of COVID-19?
+    - Are there face masks that should not be worn during the COVID-19 pandemic
+
+- intent: faq_shipping
+  examples: |
+    - Am I at risk for covid-19 from a package or products shipping from China ?
+    - is aliexpress safe during covid
+    - ordering goods from china
+    - is it safe to order clothes from china
+    - why is the disease being called coronavirus disease 2019, covid-19?
+    - how long does the virus survive on surfaces?
+    - amazon order shipped from china
+    - is it safe to order from alibaba coronavirus
+
+- intent: faq_donate
+  examples: |
+    - Is it okay for me to donate blood ? 
+    - is it safe to donate blood during covid
+    - can covid recovered patients donate blood
+    - importance of blood donation during covid-19
+    - donating blood after covid vaccine
+    - covid vaccine and blood donation
+    - can i donate blood after covid vaccine
+    - can i donate blood before covid vaccine
+    - can i get a vaccine after donating blood
+
+- intent: faq_major_risk
+  examples: |
+    - what is the risk of my child becoming sick with covid-19 ?
+    - Are children at lower risk of COVID-19 than adults?
+    - What are the common symptoms of COVID-19 in children?
+    - Are people of a particular age vulnerable to coronavirus disease?
+    - what should i do if my child has symptoms of covid-19
+    - what is the risk of my child becoming sick with the coronavirus disease
+    - vomiting coronavirus child
+    - coronavirus symptoms in kids
+    - kids getting sick from covid
+    - covid-19 infants under 1
+    - can babies get the coronavirus disease
+    - covid-19 1 year-old
+- intent: faq_infection
+  examples: |
+    - How can I protect my child from covid-19 infection ?
+    - covid-19 symptoms in toddlers
+    - covid symptoms in kids rash
+    - covid kids vomiting
+    - can babies get the coronavirus disease
+    - what is the risk of my child becoming sick with the coronavirus disease
+    - what should i do if my child has symptoms of covid-19
+- intent: faq_adults
+  examples: |
+    - Are the symptoms of covid-19 different in children than in adults ?
+    - What are the common symptoms of COVID-19 in children?
+    - Are children at lower risk of COVID-19 than adults?
+    - is there a difference on how covid-19 affects children as compared to adults?
+
+- intent: faq_children
+  examples: |
+    - Should children wear masks ?
+    - what is the risk of my child becoming sick with covid-19 ?
+    - Are children at lower risk of COVID-19 than adults?
+    - What are the common symptoms of COVID-19 in children?
+    - Are people of a particular age vulnerable to coronavirus disease?
+    - what should i do if my child has symptoms of covid-19
+    - what is the risk of my child becoming sick with the coronavirus disease
+    - vomiting coronavirus child
+    - coronavirus symptoms in kids
+    - kids getting sick from covid
+    - covid-19 infants under 1
+    - can babies get the coronavirus disease
+    - covid-19 1 year-old
+- intent: faq_prepare
+  examples: |
+    - how do I prepare my children in case of covid-19 outbreak in our community ?
+    - What steps can my family take to reduce our risk of getting covid-19 ?
+    - what are some tips to reduce the risk of covid-19
+    - importance of washing hands and social distancing to prevent the spread of covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how to protect yourself from covid-19 essay
+    - safety precautions for covid-19
+    - social distancing guidelines
+    - how can one prevent the spread of the coronavirus disease
+    - why is social distancing important
+- intent: faq_family_prepare
+  examples: |
+    - How can my family and I prepare for Covid-19 ?
+    - What steps can my family take to reduce our risk of getting covid-19 ?
+    - what are some tips to reduce the risk of covid-19
+    - importance of washing hands and social distancing to prevent the spread of covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how to protect yourself from covid-19 essay
+    - safety precautions for covid-19
+    - social distancing guidelines
+    - how can one prevent the spread of the coronavirus disease
+    - why is social distancing important
+- intent: faq_reduce_risk
+  examples: |
+    - What steps can my family take to reduce our risk of getting covid-19 ?
+    - what are some tips to reduce the risk of covid-19
+    - importance of washing hands and social distancing to prevent the spread of covid-19
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - how to protect yourself from covid-19 essay
+    - safety precautions for covid-19
+    - social distancing guidelines
+    - how can one prevent the spread of the coronavirus disease
+    - why is social distancing important
+- intent: faq_house_sick
+  examples: |
+    - What should I do if someone in my house gets sick  with covid-19 ?
+    - How can I help a family member with COVID-19 at home?
+    - Who is eligible for home care during the COVID-19 pandemic?
+    - what if someone in my house has coronavirus
+    - if someone in my house has covid should i get tested
+    - if someone in your house has covid will you get it
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19
+    - if someone in your house has covid do you have to quarantine
+    - how long should i stay in home isolation if i have the coronavirus disease?
+    - if a family member test positive for covid-19
+    - do i still need to quarantine for 14 days if i was around someone who has covid-19
+
+- intent: faq_prepare_at_work
+  examples: |
+    - How can I prepare for covid-19 at work ?
+    - Can COVID-19 be spread at the workplace?
+    - write a notice on the safety measures for covid-19 to be followed by the customers
+    - covid-19 workplace guidelines
+    - covid-19 office guidelines for employees
+    - covid-19 workplace guidelines for employees
+    - what are the return-to-work instructions for employees with covid-19?
+    - what should be done if a worker tests positive for the coronavirus?
+    - what should i do if one of my employees is suspected or confirmed to have covid-19
+
+- intent: faq_sanitizer
+  examples: |
+    - Should I use soap and water or hand sanitizer to protect against covid-19 ?
+    - What are some hand hygiene measures I can take to prevent the spread of COVID-19?
+    - Why Soap and Water Is More Effective Than Hand Sanitize?
+    - Soap or sanitiser? Which works better?
+    - Hand sanitiser or soap: making an informed choice for COVID
+- intent: faq_clean
+  examples: |
+    - What cleaning products should I use to protect against covid-19 ?
+    - How long should I wash my hands during the COVID-19 pandemic?
+    - What is the best household disinfectant for surfaces during COVID-19?
+    - What concentration of bleach should be used to disinfect surfaces from COVID-19 in non-health care settings?
+    - Can we spray disinfectants on streets and sidewalks during COVID-19 pandemic?
+    - How Cleaning Products Help Protect Against Coronavirus?
+- intent: faq_home_sanitizer
+  examples: |
+    - Should I make my own sanitizer if I can't find it in the stores ? 
+    - Why you shouldn't make your own hand sanitizer at home?
+    - how to make hand sanitizer without alcohol
+    - how to make hand sanitizer spray
+    - how to make hand sanitizer at home
+    - how to make sanitizer spray
+    - how to make sanitizer in home easy
+    - how to make hand sanitizer with surgical spirit
+    - homemade hand sanitizer
+    - how to prepare sanitizer solution
+
+- intent: faq_complications
+  examples: |
+    - What are the symptoms and complications that covid-19 can cause ?
+    - what are the complications of covid-19
+    - what are the causes of covid-19
+    - coronavirus symptoms day by day
+    - cause and effect of covid-19
+    - causes of covid-19 in points
+    - how long do coronavirus symptoms last
+    - symptoms of covid-19
+    - coronavirus symptoms 2020
+
+- intent: faq_most_risk
+  examples: |
+    - Who is most at risk for the corona virus disease?
+    - who is at higher risk for severe illness from covid-19
+    - who is at a higher risk of developing complications from covid-19
+    - what groups are at a higher risk for severe illness from covid-19
+    - who is considered high risk for covid-19
+    - who is at the highest risk to spread the covid-19
+    - does anemia put you at high risk for covid-19
+    - what groups are at higher risk of contracting covid-19
+- intent: faq_ill
+  examples: |
+    - What should people at higher risk of serious illness with covid-19 do ?
+- intent: faq_pets
+  examples: |
+    - Can I get covid-19 from my pets or other animals ?
+    - Can COVID-19 be transmitted between humans and animals?
+    - Can the coronavirus disease be transmitted through the consumption of cooked foods, including animal products?
+    - can your pets get covid-19 from humans
+    - can pets die from covid
+    - can cats get covid-19 symptoms
+    - can i walk my dog if i have covid
+    - can cats die from covid
+    - can my dog get covid if im positive
+    - covid-19 dog infection
+    - can dogs get covid and die
+
+- intent: faq_prevent_ill
+  examples: |
+    - How can I prevent covid-19 ?
+    - How to protect yourself from covid-19 essay
+    - safety precautions for covid-19
+    - how long does coronavirus last
+    - what do i do if i’ve been exposed to someone who tested positive for covid-19?
+    - 10 precautions of covid-19
+    - guidelines for covid-19
+    - how does covid-19 spread
+    - importance of washing hands and social distancing to prevent the spread of covid-19
+
+- intent: faq_mortality
+  examples: |
+    - What is the mortality rate in India?
+    - covid deaths per capita by country
+    - covid-19 deaths by country
+    - coronavirus mortality rate by age
+    - covid deaths per country
+    - coronavirus cases by country
+    - covid cases per capita by country
+    - worldometer
+    - covid deaths per capita by state
